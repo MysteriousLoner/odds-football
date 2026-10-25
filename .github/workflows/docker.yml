@@ -1,0 +1,35 @@
+name: Verify Docker image
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  docker:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: docker/setup-buildx-action@v3
+      - uses: docker/build-push-action@v6
+        with:
+          context: .
+          load: true
+          tags: terrace-odds-football:ci
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+      - name: Smoke test container
+        shell: bash
+        run: |
+          docker run -d --name terrace-ci --read-only --tmpfs /tmp:rw,noexec,nosuid,size=64m -p 127.0.0.1:3000:3000 terrace-odds-football:ci
+          trap 'docker logs terrace-ci; docker rm -f terrace-ci' EXIT
+          for attempt in {1..30}; do
+            if curl --fail --silent http://127.0.0.1:3000/api/health; then
+              curl --fail --silent http://127.0.0.1:3000/ -o /tmp/terrace-page.html
+              grep -q 'THE OTHER SIDE' /tmp/terrace-page.html
+              curl --fail --silent http://127.0.0.1:3000/api/markets -o /tmp/terrace-markets.json
+              grep -q '"configured":false' /tmp/terrace-markets.json
+              exit 0
+            fi
+            sleep 2
+          done
+          exit 1

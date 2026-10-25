@@ -1,0 +1,82 @@
+# Terrace — Premier League 反波胆 demo
+
+A responsive reverse correct-score sportsbook with 10,000 starting play credits, risk-based bet slips, credit refills, history, watchlist, team search, and simulated settlement. No deposits, payments, prizes, or exchange order execution.
+
+## Run with Docker
+
+Requirements: Docker Desktop or Docker Engine with the Compose plugin.
+
+```sh
+cp .env.example .env
+# Optional: edit .env and set BETFAIR_ODDS_API_KEY to your own key.
+docker compose up --build -d
+```
+
+Open **http://localhost:3000**. A blank key keeps the simulated demo fully usable. To load API odds, select **Connect live odds → Check connection & load odds**.
+
+```sh
+docker compose ps
+docker compose logs -f web
+docker compose down
+```
+
+Set `PORT=8080` in `.env` to use http://localhost:8080. Compose binds to `127.0.0.1` by default. Wallets and tickets live in the visitor's browser, so container restarts do not erase them. Clearing browser site data resets that browser's demo.
+
+After changing the API key, apply the runtime environment again:
+
+```sh
+docker compose up -d --force-recreate
+```
+
+The Dockerfile builds a Next.js standalone Node server from the same app source used by the Sites/Vinext version. The runtime image contains the traced server and public assets, runs as the `node` user, and listens on port 3000. Compose uses a read-only filesystem, a temporary `/tmp`, and no added Linux capabilities. Health checks use `/api/health`; they never call the odds provider.
+
+Environment files, local credentials, Git history, dependencies, build outputs and review artifacts are excluded from the Docker context. **Never pass API keys as build arguments or commit them.** No key is included in this repository or image.
+
+To run the image without Compose:
+
+```sh
+docker build -t terrace-odds-football:local .
+# Export BETFAIR_ODDS_API_KEY in your shell first, or omit --env for demo mode.
+docker run --rm --init -p 127.0.0.1:3000:3000 \
+  --env BETFAIR_ODDS_API_KEY terrace-odds-football:local
+```
+
+## Development and checks
+
+Node 22.13+:
+
+```sh
+npm ci
+npm run dev:docker
+npm test
+npm run typecheck
+npm run build:docker
+```
+
+`dev:docker` starts the standard Next.js development server. The existing `dev`, `build`, and `start` scripts retain the original Sites/Vinext workflow. `.openai/hosting.json` identifies the original private Site; Docker does not require Sites credentials or Cloudflare login.
+
+The GitHub Actions workflow builds the container, runs the accounting tests during the image build, and smoke-tests the page, health check, and missing-key API response. It does not publish an image or require the API key.
+
+## Betfair Odds API
+
+Reference: https://betfair-odds.com/docs
+
+The server endpoint `/api/markets` reads the live and prematch soccer feeds using the `x-portal-apikey` header. It filters events labeled Premier League and keeps priced numeric `CORRECT_SCORE` lay selections. Market ID, runner ID, and handicap identify each selection. Provider fixture and competition labels are not independently verified.
+
+`BETFAIR_ODDS_API_KEY` is read at runtime from the server environment. It is never sent to the browser. The original hosted Site's secret is managed separately and is not exported into this checkout.
+
+Prices refresh manually. A 30-second server cache limits duplicate provider calls, and quotes expire after 30 seconds until refreshed. Both feeds must be fresh; stale or failed feeds pause new API-priced bets. Refresh uses up to two provider requests and is subject to your provider account's limits. There is no continuous polling or WebSocket streaming.
+
+## Credit model and settlement
+
+The amount entered is **maximum loss / liability**, not exchange lay stake. Profit = liability / (lay odds − 1), rounded down to two decimals. Placement reserves liability. A different final score returns liability plus profit; a matching score loses the liability. No demo commission.
+
+**My bets → Simulate result** applies one chosen demo score to all open tickets on a match, once. Settled matches cannot accept further bets. Settlement is simulated even with API-sourced prices: no official result verification is implemented. Provider liquidity is informational; no orders are matched on an exchange.
+
+Wallet and tickets are stored together in localStorage. This is a browser-local demo with no shared ledger or cross-device account sync.
+
+## Assets
+
+Stadium photo: https://images.unsplash.com/photo-1522778119026-d647f0596c20
+
+Barlow Condensed and DM Sans are served locally from Google Fonts. Club badges are illustrative initials, not official marks.

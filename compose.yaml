@@ -1,0 +1,19 @@
+services:
+  web:
+    build:
+      context: .
+      target: runtime
+    image: terrace-odds-football:local
+    ports:
+      - "127.0.0.1:${PORT:-3000}:3000"
+    environment:
+      BETFAIR_ODDS_API_KEY: ${BETFAIR_ODDS_API_KEY:-}
+    restart: unless-stopped
+    init: true
+    read_only: true
+    tmpfs:
+      - /tmp:rw,noexec,nosuid,size=64m
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
