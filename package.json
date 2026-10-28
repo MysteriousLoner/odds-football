@@ -16,7 +16,8 @@
     "build:docker": "next build",
     "start:docker": "node .next/standalone/server.js",
     "test": "node --experimental-strip-types --test lib/market.test.ts",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "reports": "node scripts/serve-reports.mjs"
   },
   "dependencies": {
     "@base-ui/react": "^1.7.0",

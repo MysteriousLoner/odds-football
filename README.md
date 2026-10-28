@@ -80,3 +80,7 @@ Wallet and tickets are stored together in localStorage. This is a browser-local 
 Stadium photo: https://images.unsplash.com/photo-1522778119026-d647f0596c20
 
 Barlow Condensed and DM Sans are served locally from Google Fonts. Club badges are illustrative initials, not official marks.
+
+## Colleague / Codex handoff and research archive
+
+Start with [docs/CODEX_HANDOFF.md](docs/CODEX_HANDOFF.md). All historical research is under [reports/](reports/index.html). With Node installed, `npm run reports` opens a local report server at http://127.0.0.1:8081; it makes no provider requests. The original Sites source is preserved in `archive/terrace-sites-source.tar.gz`. API keys must be shared privately and are excluded from the repository.

@@ -1,0 +1,325 @@
+- navigation:
+  - link:
+    - /url: javascript:void(0);
+  - list:
+    - link "首页":
+      - /url: javascript:void(0);
+    - link "交易 ":
+      - /url: javascript:void(0);
+      - text: 交易
+      - generic: 
+    - link "业务管理 ":
+      - /url: javascript:void(0);
+      - text: 业务管理
+      - generic: 
+    - link "统计报表 ":
+      - /url: javascript:void(0);
+      - text: 统计报表
+      - generic: 
+    - link "系统设置 ":
+      - /url: javascript:void(0);
+      - text: 系统设置
+      - generic: 
+  - generic: 
+  - combobox:
+    - option "切换主题" [disabled]
+    - option "主题ey"
+    - option "主题fb1"
+    - option "主题fb2"
+    - option "主题fb3" [selected]
+    - option "主题fb4"
+    - option "主题fb5"
+    - option "主题fb6"
+    - option "主题fb7"
+    - option "主题fb8"
+    - option "主题fb9"
+    - option "主题fb10"
+    - option "主题fb11"
+    - option "主题fb31"
+    - option "主题fb32"
+    - option "主题fb41"
+    - option "主题fbwq"
+    - option "主题jr"
+    - option "主题jr1"
+    - option "主题jr2"
+    - option "主题ty"
+    - option "主题zf"
+  - button "入金":  入金
+  - button "出金":  出金
+  - generic: 账户余额
+  - text: "178239724.16"
+  - generic: 
+- generic: 2026-10-26 21:00:00
+- text: 玻利维亚国家联赛 U19
+- generic "玻利维亚足球学院 U19"
+- generic: VS
+- generic "布洛布洛|圣安东尼奥 U19"
+- generic: 2026-10-26 21:00:00
+- text: 奥地利业余杯
+- generic "平卡菲尔德"
+- generic: VS
+- generic "奥伯瓦特"
+- generic: 2026-10-26 21:00:00
+- text: 埃塞俄比亚超级联赛
+- generic "琴恰|加莫人"
+- generic: VS
+- generic "埃塞俄比亚|尼格德银行"
+- generic: 2026-10-26 21:00:00
+- text: 吉尔吉斯斯坦超级联赛
+- generic "阿尔加"
+- generic: VS
+- generic "乌兹根"
+- generic: 2026-10-26 21:00:00
+- text: 巴西圣卡塔琳娜州锦标赛 女子
+- generic "雅拉瓜|女孩 女子"
+- generic: VS
+- generic "克里丘马 女子"
+- generic: 2026-10-26 21:00:00
+- text: 奥地利业余杯
+- generic "瑞斯"
+- generic: VS
+- generic "多恩比恩1913"
+- generic: 2026-10-26 21:00:00
+- text: 奥地利业余杯
+- generic "莱布灵"
+- generic: VS
+- generic "卡尔斯多夫"
+- generic: 2026-10-26 21:00:00
+- text: 奥地利业余杯
+- generic "基策"
+- generic: VS
+- generic "绍埃尔布鲁恩|巴特"
+- generic: 2026-10-26 21:00:00
+- text: 奥地利业余杯
+- generic "霍亨恩姆斯"
+- generic: VS
+- generic "罗登堡"
+- generic: 2026-10-26 21:00:00
+- text: 奥地利州级联赛
+- generic "格拉芬施泰因"
+- generic: VS
+- generic "费拉赫"
+- generic: 2026-10-26 21:00:00
+- text: 英格兰发展联赛2
+- generic "巴恩斯利 U21"
+- generic: VS
+- generic "彼得伯勒 U21"
+- generic: 2026-10-26 21:00:00
+- text: 英格兰发展联赛2
+- generic "斯旺西 U21"
+- generic: VS
+- generic "查尔顿 U21"
+- generic: 2026-10-26 21:30:00
+- text: 突尼斯乙级联赛
+- generic "本阿鲁斯"
+- generic: VS
+- generic "梅格林"
+- generic: 2026-10-26 21:30:00
+- text: 突尼斯乙级联赛
+- generic "马赫迪耶"
+- generic: VS
+- generic "泰塔温"
+- generic: 2026-10-26 21:30:00
+- text: 奥地利州级联赛
+- generic "兰斯克龙"
+- generic: VS
+- generic "努斯多夫"
+- generic: 2026-10-26 21:30:00
+- text: 突尼斯乙级联赛
+- generic "索里曼"
+- generic: VS
+- generic "沙拜"
+- generic: 2026-10-26 21:30:00
+- text: 突尼斯乙级联赛
+- generic "Stade Soussien"
+- generic: VS
+- generic "斯法克斯铁路"
+- generic: 2026-10-26 21:30:00
+- text: 突尼斯乙级联赛
+- generic "布沙玛"
+- generic: VS
+- generic "卡拉运动"
+- generic: 2026-10-26 21:45:00
+- text: 亚洲冠军联赛精英赛
+- generic "费尔干纳|石油工人"
+- generic: VS
+- generic "吉达联"
+- generic: 2026-10-26 22:00:00
+- text: 乌拉圭后备队联赛
+- generic "佩纳罗尔 后备队"
+- generic: VS
+- generic "蒙得维的亚|流浪者 后备队"
+- generic: 2026-10-26 22:00:00
+- text: 英格兰发展联赛2
+- generic "谢菲尔德联 U21"
+- generic: VS
+- generic "弗利特伍德城 U21"
+- generic: 2026-10-26 22:00:00
+- text: 塞尔维亚联赛 女子
+- generic "贝尔格莱德|红星 女子"
+- generic: VS
+- generic "伏伊伏丁那 女子"
+- generic: 2026-10-26 22:00:00
+- generic: Jordan Youth League
+- generic "约旦|青年 U20"
+- generic: VS
+- generic "侯赛因 U20"
+- generic: 2026-10-26 22:00:00
+- generic: Jordan Youth League
+- generic "安曼|国民 U20"
+- generic: VS
+- generic "伊尔比德|阿拉伯 U20"
+- generic: 2026-10-26 22:00:00
+- generic: Jordan Youth League
+- generic "半岛 U20"
+- generic: VS
+- generic "霍兰平原 U20"
+- generic: 2026-10-26 22:00:00
+- generic: Jordan Youth League
+- generic "维达特 U20"
+- generic: VS
+- generic "连姆沙 U20"
+- generic: 2026-10-26 22:00:00
+- generic: Jordan Youth League
+- generic "Madaris AL Khader U20"
+- generic: VS
+- generic "安曼|费萨里 U20"
+- generic: 2026-10-26 22:00:00
+- generic: Jordan Youth League
+- generic "巴卡阿 U20"
+- generic: VS
+- generic "连姆沙 U20"
+- generic: 2026-10-26 22:00:00
+- text: 印度超级联赛
+- generic "莫亨巴甘|超级巨人"
+- generic: VS
+- generic "钦奈"
+- generic: 2026-10-26 22:00:00
+- text: 乌拉圭后备队联赛
+- generic "东方 后备队"
+- generic: VS
+- generic "波士顿河 后备队"
+- generic: 埃塞俄比亚超级联赛
+- paragraph: 2026-10-26 20:00:00
+- paragraph:
+  - generic: 讷格莱阿斯
+  - generic: Negelle Arsi
+  - generic: VS
+  - generic: 阿达玛城
+  - generic: Adama City
+- text: 销量
+- generic: 
+- generic: 178,239,724.16
+- generic: 可用余额
+- generic: 1,000.00
+- generic: 未结算
+- generic: "0"
+- generic: 未结算订单数
+- text:               
+- generic:  
+- generic:   
+- paragraph:
+  - text: 全场比分
+  - generic: "8"
+- table:
+  - rowgroup:
+    - row "主胜 平局 客胜":
+      - cell "主胜"
+      - cell "平局"
+      - cell "客胜"
+  - rowgroup:
+    - row "1-0 9.6% 0-0 8.79% 0-1 6.21%":
+      - cell "1-0 9.6%":
+        - generic: 1-0
+        - generic: 9.6%
+      - cell "0-0 8.79%":
+        - generic: 0-0
+        - generic: 8.79%
+      - cell "0-1 6.21%":
+        - generic: 0-1
+        - generic: 6.21%
+    - row "2-0 6.6% 1-1 7.54% 0-2 3.1%":
+      - cell "2-0 6.6%":
+        - generic: 2-0
+        - generic: 6.6%
+      - cell "1-1 7.54%":
+        - generic: 1-1
+        - generic: 7.54%
+      - cell "0-2 3.1%":
+        - generic: 0-2
+        - generic: 3.1%
+    - row "2-1 4.8% 2-2 2.3% 0-3 1.28%":
+      - cell "2-1 4.8%":
+        - generic: 2-1
+        - generic: 4.8%
+      - cell "2-2 2.3%":
+        - generic: 2-2
+        - generic: 2.3%
+      - cell "0-3 1.28%":
+        - generic: 0-3
+        - generic: 1.28%
+    - row "3-0 3.52% 3-3 0.65% 1-2 3.1%":
+      - cell "3-0 3.52%":
+        - generic: 3-0
+        - generic: 3.52%
+      - cell "3-3 0.65%":
+        - generic: 3-3
+        - generic: 0.65%
+      - cell "1-2 3.1%":
+        - generic: 1-2
+        - generic: 3.1%
+    - row "3-1 2.3% - 1-3 1.28%":
+      - cell "3-1 2.3%":
+        - generic: 3-1
+        - generic: 2.3%
+      - cell "-"
+      - cell "1-3 1.28%":
+        - generic: 1-3
+        - generic: 1.28%
+    - row "3-2 1.28% - 2-3 1.03%":
+      - cell "3-2 1.28%":
+        - generic: 3-2
+        - generic: 1.28%
+      - cell "-"
+      - cell "2-3 1.03%":
+        - generic: 2-3
+        - generic: 1.03%
+- paragraph: 半场比分
+- table:
+  - rowgroup:
+    - row "主胜 平局 客胜":
+      - cell "主胜"
+      - cell "平局"
+      - cell "客胜"
+  - rowgroup:
+    - row "1-0 14.08% 0-0 23.45% 0-1 8.79%":
+      - cell "1-0 14.08%":
+        - generic: 1-0
+        - generic: 14.08%
+      - cell "0-0 23.45%":
+        - generic: 0-0
+        - generic: 23.45%
+      - cell "0-1 8.79%":
+        - generic: 0-1
+        - generic: 8.79%
+    - row "2-0 4.8% 1-1 5.27% 0-2 2.3%":
+      - cell "2-0 4.8%":
+        - generic: 2-0
+        - generic: 4.8%
+      - cell "1-1 5.27%":
+        - generic: 1-1
+        - generic: 5.27%
+      - cell "0-2 2.3%":
+        - generic: 0-2
+        - generic: 2.3%
+    - row "2-1 1.82% 2-2 0.43% 1-2 1.28%":
+      - cell "2-1 1.82%":
+        - generic: 2-1
+        - generic: 1.82%
+      - cell "2-2 0.43%":
+        - generic: 2-2
+        - generic: 0.43%
+      - cell "1-2 1.28%":
+        - generic: 1-2
+        - generic: 1.28%
+- text:    

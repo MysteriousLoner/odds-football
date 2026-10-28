@@ -1,0 +1,1332 @@
+{
+  "formula": "API gross return on maximum liability (%) = 100 / (layOdds - 1); ratio = site percentage / API gross return percentage",
+  "scope": "Full-time CORRECT_SCORE, numeric 0-0 through 3-3 only. Prematch soccer. Convenience sample, not a platform census. No commission assumption.",
+  "limitations": "Captures are not simultaneous; use capture timestamps and feed metadata. Displayed percentages only; site settlement/stake basis and source feed are unverified. Initial captures with delayed table updates were superseded.",
+  "summary": {
+    "fixtures": 7,
+    "leagues": 6,
+    "pairs": 112,
+    "medianRatio": 0.74228,
+    "minRatio": 0.48438000000000003,
+    "maxRatio": 2.6585,
+    "nearHalf": 7,
+    "aboveOne": 28,
+    "maxCaptureGapSeconds": 178.805787
+  },
+  "results": [
+    {
+      "eventId": "36225095",
+      "fixture": "Persebaya Surabaya v Madura Utd",
+      "league": "Indonesian Super League",
+      "kickoff": "2026-10-26T12:00:00.000Z",
+      "siteCapturedAt": "2026-10-26T08:30:25.129Z",
+      "apiCapturedAt": "2026-10-26T08:31:11.691964+00:00",
+      "captureGapSeconds": 46.562964,
+      "apiMeta": {
+        "feed": "prematch",
+        "receivedAt": "2026-10-26T08:31:11.043Z",
+        "seq": 298005,
+        "delta_seq": 0,
+        "stale": false,
+        "age_ms": 149,
+        "snapshot_age_ms": 149,
+        "event_count": 883
+      },
+      "n": 16,
+      "medianRatio": 0.6529499999999999,
+      "minRatio": 0.5004,
+      "maxRatio": 2.1527000000000003,
+      "nearHalf": 3,
+      "rows": [
+        {
+          "score": "1-0",
+          "sitePercent": 6.21,
+          "apiLayOdds": 9.6,
+          "apiReturnPercent": 11.627906976744187,
+          "ratio": 0.53406,
+          "apiBackOdds": 8.8,
+          "apiLaySize": 41.01,
+          "marketId": "1.264345715"
+        },
+        {
+          "score": "0-0",
+          "sitePercent": 3.52,
+          "apiLayOdds": 20,
+          "apiReturnPercent": 5.2631578947368425,
+          "ratio": 0.6688,
+          "apiBackOdds": 18,
+          "apiLaySize": 20.34,
+          "marketId": "1.264345715"
+        },
+        {
+          "score": "0-1",
+          "sitePercent": 2.77,
+          "apiLayOdds": 24,
+          "apiReturnPercent": 4.3478260869565215,
+          "ratio": 0.6371,
+          "apiBackOdds": 21,
+          "apiLaySize": 13.17,
+          "marketId": "1.264345715"
+        },
+        {
+          "score": "2-0",
+          "sitePercent": 6.6,
+          "apiLayOdds": 10,
+          "apiReturnPercent": 11.11111111111111,
+          "ratio": 0.594,
+          "apiBackOdds": 8.8,
+          "apiLaySize": 28.59,
+          "marketId": "1.264345715"
+        },
+        {
+          "score": "1-1",
+          "sitePercent": 5.87,
+          "apiLayOdds": 10,
+          "apiReturnPercent": 11.11111111111111,
+          "ratio": 0.5283,
+          "apiBackOdds": 9,
+          "apiLaySize": 30.98,
+          "marketId": "1.264345715"
+        },
+        {
+          "score": "0-2",
+          "sitePercent": 1.82,
+          "apiLayOdds": 60,
+          "apiReturnPercent": 1.694915254237288,
+          "ratio": 1.0738,
+          "apiBackOdds": 46,
+          "apiLaySize": 13.23,
+          "marketId": "1.264345715"
+        },
+        {
+          "score": "2-1",
+          "sitePercent": 5.56,
+          "apiLayOdds": 10,
+          "apiReturnPercent": 11.11111111111111,
+          "ratio": 0.5004,
+          "apiBackOdds": 8.8,
+          "apiLaySize": 30.56,
+          "marketId": "1.264345715"
+        },
+        {
+          "score": "2-2",
+          "sitePercent": 3.1,
+          "apiLayOdds": 21,
+          "apiReturnPercent": 5.0,
+          "ratio": 0.62,
+          "apiBackOdds": 18.5,
+          "apiLaySize": 15.5,
+          "marketId": "1.264345715"
+        },
+        {
+          "score": "0-3",
+          "sitePercent": 1.03,
+          "apiLayOdds": 210,
+          "apiReturnPercent": 0.4784688995215311,
+          "ratio": 2.1527000000000003,
+          "apiBackOdds": 140,
+          "apiLaySize": 7.76,
+          "marketId": "1.264345715"
+        },
+        {
+          "score": "3-0",
+          "sitePercent": 4.8,
+          "apiLayOdds": 15.5,
+          "apiReturnPercent": 6.896551724137931,
+          "ratio": 0.696,
+          "apiBackOdds": 13,
+          "apiLaySize": 24.41,
+          "marketId": "1.264345715"
+        },
+        {
+          "score": "3-3",
+          "sitePercent": 1.03,
+          "apiLayOdds": 120,
+          "apiReturnPercent": 0.8403361344537815,
+          "ratio": 1.2257,
+          "apiBackOdds": 90,
+          "apiLaySize": 13.35,
+          "marketId": "1.264345715"
+        },
+        {
+          "score": "1-2",
+          "sitePercent": 2.77,
+          "apiLayOdds": 30,
+          "apiReturnPercent": 3.4482758620689653,
+          "ratio": 0.8033,
+          "apiBackOdds": 21,
+          "apiLaySize": 56.06,
+          "marketId": "1.264345715"
+        },
+        {
+          "score": "3-1",
+          "sitePercent": 4.06,
+          "apiLayOdds": 16,
+          "apiReturnPercent": 6.666666666666667,
+          "ratio": 0.6089999999999999,
+          "apiBackOdds": 14,
+          "apiLaySize": 21.51,
+          "marketId": "1.264345715"
+        },
+        {
+          "score": "1-3",
+          "sitePercent": 1.28,
+          "apiLayOdds": 100,
+          "apiReturnPercent": 1.0101010101010102,
+          "ratio": 1.2671999999999999,
+          "apiBackOdds": 70,
+          "apiLaySize": 15.86,
+          "marketId": "1.264345715"
+        },
+        {
+          "score": "3-2",
+          "sitePercent": 2.03,
+          "apiLayOdds": 32,
+          "apiReturnPercent": 3.225806451612903,
+          "ratio": 0.6293,
+          "apiBackOdds": 27,
+          "apiLaySize": 14.07,
+          "marketId": "1.264345715"
+        },
+        {
+          "score": "2-3",
+          "sitePercent": 1.28,
+          "apiLayOdds": 95,
+          "apiReturnPercent": 1.0638297872340425,
+          "ratio": 1.2032,
+          "apiBackOdds": 55,
+          "apiLaySize": 17.64,
+          "marketId": "1.264345715"
+        }
+      ]
+    },
+    {
+      "eventId": "36237959",
+      "fixture": "Muangthong Utd v Police Tero",
+      "league": "Thai League 2",
+      "kickoff": "2026-10-26T12:00:00.000Z",
+      "siteCapturedAt": "2026-10-26T08:30:39.017Z",
+      "apiCapturedAt": "2026-10-26T08:31:13.029943+00:00",
+      "captureGapSeconds": 34.012943,
+      "apiMeta": {
+        "feed": "prematch",
+        "receivedAt": "2026-10-26T08:31:11.043Z",
+        "seq": 298005,
+        "delta_seq": 0,
+        "stale": false,
+        "age_ms": 1497,
+        "snapshot_age_ms": 1497,
+        "event_count": 883
+      },
+      "n": 16,
+      "medianRatio": 0.7715000000000001,
+      "minRatio": 0.5772799999999999,
+      "maxRatio": 2.2912,
+      "nearHalf": 0,
+      "rows": [
+        {
+          "score": "1-0",
+          "sitePercent": 7.04,
+          "apiLayOdds": 9.2,
+          "apiReturnPercent": 12.195121951219512,
+          "ratio": 0.5772799999999999,
+          "apiBackOdds": 6.4,
+          "apiLaySize": 132.68,
+          "marketId": "1.264485569"
+        },
+        {
+          "score": "0-0",
+          "sitePercent": 4.8,
+          "apiLayOdds": 17,
+          "apiReturnPercent": 6.25,
+          "ratio": 0.768,
+          "apiBackOdds": 11.5,
+          "apiLaySize": 76.3,
+          "marketId": "1.264485569"
+        },
+        {
+          "score": "0-1",
+          "sitePercent": 4.06,
+          "apiLayOdds": 22,
+          "apiReturnPercent": 4.761904761904762,
+          "ratio": 0.8525999999999999,
+          "apiBackOdds": 14.5,
+          "apiLaySize": 54.26,
+          "marketId": "1.264485569"
+        },
+        {
+          "score": "2-0",
+          "sitePercent": 6.6,
+          "apiLayOdds": 11.5,
+          "apiReturnPercent": 9.523809523809524,
+          "ratio": 0.693,
+          "apiBackOdds": 7.8,
+          "apiLaySize": 112.42,
+          "marketId": "1.264485569"
+        },
+        {
+          "score": "1-1",
+          "sitePercent": 6.6,
+          "apiLayOdds": 10.5,
+          "apiReturnPercent": 10.526315789473685,
+          "ratio": 0.627,
+          "apiBackOdds": 7,
+          "apiLaySize": 119.54,
+          "marketId": "1.264485569"
+        },
+        {
+          "score": "0-2",
+          "sitePercent": 2.3,
+          "apiLayOdds": 55,
+          "apiReturnPercent": 1.8518518518518519,
+          "ratio": 1.242,
+          "apiBackOdds": 5.2,
+          "apiLaySize": 24.21,
+          "marketId": "1.264485569"
+        },
+        {
+          "score": "2-1",
+          "sitePercent": 5.56,
+          "apiLayOdds": 11.5,
+          "apiReturnPercent": 9.523809523809524,
+          "ratio": 0.5838,
+          "apiBackOdds": 7.8,
+          "apiLaySize": 103,
+          "marketId": "1.264485569"
+        },
+        {
+          "score": "2-2",
+          "sitePercent": 2.77,
+          "apiLayOdds": 24,
+          "apiReturnPercent": 4.3478260869565215,
+          "ratio": 0.6371,
+          "apiBackOdds": 16.5,
+          "apiLaySize": 48.93,
+          "marketId": "1.264485569"
+        },
+        {
+          "score": "0-3",
+          "sitePercent": 1.28,
+          "apiLayOdds": 180,
+          "apiReturnPercent": 0.5586592178770949,
+          "ratio": 2.2912,
+          "apiBackOdds": 130,
+          "apiLaySize": 7.15,
+          "marketId": "1.264485569"
+        },
+        {
+          "score": "3-0",
+          "sitePercent": 4.4,
+          "apiLayOdds": 19.5,
+          "apiReturnPercent": 5.405405405405405,
+          "ratio": 0.8140000000000001,
+          "apiBackOdds": 13,
+          "apiLaySize": 59.57,
+          "marketId": "1.264485569"
+        },
+        {
+          "score": "3-3",
+          "sitePercent": 1.03,
+          "apiLayOdds": 140,
+          "apiReturnPercent": 0.7194244604316546,
+          "ratio": 1.4317000000000002,
+          "apiBackOdds": 5.5,
+          "apiLaySize": 10.57,
+          "marketId": "1.264485569"
+        },
+        {
+          "score": "1-2",
+          "sitePercent": 3.1,
+          "apiLayOdds": 26,
+          "apiReturnPercent": 4.0,
+          "ratio": 0.775,
+          "apiBackOdds": 17.5,
+          "apiLaySize": 47.33,
+          "marketId": "1.264485569"
+        },
+        {
+          "score": "3-1",
+          "sitePercent": 3.52,
+          "apiLayOdds": 21,
+          "apiReturnPercent": 5.0,
+          "ratio": 0.7040000000000001,
+          "apiBackOdds": 14,
+          "apiLaySize": 59.9,
+          "marketId": "1.264485569"
+        },
+        {
+          "score": "1-3",
+          "sitePercent": 1.28,
+          "apiLayOdds": 95,
+          "apiReturnPercent": 1.0638297872340425,
+          "ratio": 1.2032,
+          "apiBackOdds": 5.4,
+          "apiLaySize": 13.47,
+          "marketId": "1.264485569"
+        },
+        {
+          "score": "3-2",
+          "sitePercent": 1.82,
+          "apiLayOdds": 42,
+          "apiReturnPercent": 2.4390243902439024,
+          "ratio": 0.7462000000000001,
+          "apiBackOdds": 5,
+          "apiLaySize": 30.56,
+          "marketId": "1.264485569"
+        },
+        {
+          "score": "2-3",
+          "sitePercent": 1.28,
+          "apiLayOdds": 95,
+          "apiReturnPercent": 1.0638297872340425,
+          "ratio": 1.2032,
+          "apiBackOdds": 5.4,
+          "apiLaySize": 15.42,
+          "marketId": "1.264485569"
+        }
+      ]
+    },
+    {
+      "eventId": "36184231",
+      "fixture": "Lokomotiv Plovdiv v Slavia Sofia",
+      "league": "Bulgarian A League",
+      "kickoff": "2026-10-26T15:00:00.000Z",
+      "siteCapturedAt": "2026-10-26T08:32:29.219Z",
+      "apiCapturedAt": "2026-10-26T08:32:55.587299+00:00",
+      "captureGapSeconds": 26.368299,
+      "apiMeta": {
+        "feed": "prematch",
+        "receivedAt": "2026-10-26T08:32:49.999Z",
+        "seq": 298015,
+        "delta_seq": 0,
+        "stale": false,
+        "age_ms": 4881,
+        "snapshot_age_ms": 4881,
+        "event_count": 883
+      },
+      "n": 16,
+      "medianRatio": 0.6907,
+      "minRatio": 0.5533499999999999,
+      "maxRatio": 1.6895000000000002,
+      "nearHalf": 0,
+      "rows": [
+        {
+          "score": "1-0",
+          "sitePercent": 8.79,
+          "apiLayOdds": 7.4,
+          "apiReturnPercent": 15.625,
+          "ratio": 0.56256,
+          "apiBackOdds": 6.8,
+          "apiLaySize": 52.64,
+          "marketId": "1.263762371"
+        },
+        {
+          "score": "0-0",
+          "sitePercent": 8.79,
+          "apiLayOdds": 9.4,
+          "apiReturnPercent": 11.904761904761905,
+          "ratio": 0.73836,
+          "apiBackOdds": 8.6,
+          "apiLaySize": 7.78,
+          "marketId": "1.263762371"
+        },
+        {
+          "score": "0-1",
+          "sitePercent": 7.04,
+          "apiLayOdds": 12.5,
+          "apiReturnPercent": 8.695652173913043,
+          "ratio": 0.8096,
+          "apiBackOdds": 11,
+          "apiLaySize": 48.4,
+          "marketId": "1.263762371"
+        },
+        {
+          "score": "2-0",
+          "sitePercent": 5.27,
+          "apiLayOdds": 12,
+          "apiReturnPercent": 9.090909090909092,
+          "ratio": 0.5797,
+          "apiBackOdds": 11.5,
+          "apiLaySize": 6.12,
+          "marketId": "1.263762371"
+        },
+        {
+          "score": "1-1",
+          "sitePercent": 8.79,
+          "apiLayOdds": 7.6,
+          "apiReturnPercent": 15.151515151515152,
+          "ratio": 0.5801399999999999,
+          "apiBackOdds": 7,
+          "apiLaySize": 15.67,
+          "marketId": "1.263762371"
+        },
+        {
+          "score": "0-2",
+          "sitePercent": 3.52,
+          "apiLayOdds": 32,
+          "apiReturnPercent": 3.225806451612903,
+          "ratio": 1.0912,
+          "apiBackOdds": 26,
+          "apiLaySize": 45.93,
+          "marketId": "1.263762371"
+        },
+        {
+          "score": "2-1",
+          "sitePercent": 5.27,
+          "apiLayOdds": 11.5,
+          "apiReturnPercent": 9.523809523809524,
+          "ratio": 0.5533499999999999,
+          "apiBackOdds": 10,
+          "apiLaySize": 56.22,
+          "marketId": "1.263762371"
+        },
+        {
+          "score": "2-2",
+          "sitePercent": 2.77,
+          "apiLayOdds": 23,
+          "apiReturnPercent": 4.545454545454546,
+          "ratio": 0.6093999999999999,
+          "apiBackOdds": 21,
+          "apiLaySize": 18.63,
+          "marketId": "1.263762371"
+        },
+        {
+          "score": "0-3",
+          "sitePercent": 1.55,
+          "apiLayOdds": 110,
+          "apiReturnPercent": 0.9174311926605505,
+          "ratio": 1.6895000000000002,
+          "apiBackOdds": 90,
+          "apiLaySize": 14.51,
+          "marketId": "1.263762371"
+        },
+        {
+          "score": "3-0",
+          "sitePercent": 2.3,
+          "apiLayOdds": 28,
+          "apiReturnPercent": 3.7037037037037037,
+          "ratio": 0.621,
+          "apiBackOdds": 24,
+          "apiLaySize": 8.8,
+          "marketId": "1.263762371"
+        },
+        {
+          "score": "3-3",
+          "sitePercent": 0.79,
+          "apiLayOdds": 180,
+          "apiReturnPercent": 0.5586592178770949,
+          "ratio": 1.4141,
+          "apiBackOdds": 140,
+          "apiLaySize": 7.7,
+          "marketId": "1.263762371"
+        },
+        {
+          "score": "1-2",
+          "sitePercent": 4.06,
+          "apiLayOdds": 18,
+          "apiReturnPercent": 5.882352941176471,
+          "ratio": 0.6901999999999999,
+          "apiBackOdds": 16,
+          "apiLaySize": 3.14,
+          "marketId": "1.263762371"
+        },
+        {
+          "score": "3-1",
+          "sitePercent": 2.3,
+          "apiLayOdds": 28,
+          "apiReturnPercent": 3.7037037037037037,
+          "ratio": 0.621,
+          "apiBackOdds": 25,
+          "apiLaySize": 20.14,
+          "marketId": "1.263762371"
+        },
+        {
+          "score": "1-3",
+          "sitePercent": 1.55,
+          "apiLayOdds": 70,
+          "apiReturnPercent": 1.4492753623188406,
+          "ratio": 1.0695000000000001,
+          "apiBackOdds": 60,
+          "apiLaySize": 16.02,
+          "marketId": "1.263762371"
+        },
+        {
+          "score": "3-2",
+          "sitePercent": 1.28,
+          "apiLayOdds": 55,
+          "apiReturnPercent": 1.8518518518518519,
+          "ratio": 0.6912,
+          "apiBackOdds": 44,
+          "apiLaySize": 15.25,
+          "marketId": "1.263762371"
+        },
+        {
+          "score": "2-3",
+          "sitePercent": 1.28,
+          "apiLayOdds": 90,
+          "apiReturnPercent": 1.1235955056179776,
+          "ratio": 1.1392,
+          "apiBackOdds": 70,
+          "apiLaySize": 8.52,
+          "marketId": "1.263762371"
+        }
+      ]
+    },
+    {
+      "eventId": "36239760",
+      "fixture": "Galatasaray U19 v Fenerbahce SK U19",
+      "league": "Turkish U19",
+      "kickoff": "2026-10-26T11:30:00.000Z",
+      "siteCapturedAt": "2026-10-26T08:34:21.743Z",
+      "apiCapturedAt": "2026-10-26T08:31:49.518888+00:00",
+      "captureGapSeconds": 152.224112,
+      "apiMeta": {
+        "feed": "prematch",
+        "receivedAt": "2026-10-26T08:31:40.413Z",
+        "seq": 298008,
+        "delta_seq": 0,
+        "stale": false,
+        "age_ms": 8540,
+        "snapshot_age_ms": 8540,
+        "event_count": 883
+      },
+      "n": 16,
+      "medianRatio": 0.8108,
+      "minRatio": 0.5277999999999999,
+      "maxRatio": 1.3952,
+      "nearHalf": 1,
+      "rows": [
+        {
+          "score": "1-0",
+          "sitePercent": 4.8,
+          "apiLayOdds": 18,
+          "apiReturnPercent": 5.882352941176471,
+          "ratio": 0.816,
+          "apiBackOdds": 13.5,
+          "apiLaySize": 1.24,
+          "marketId": "1.264511234"
+        },
+        {
+          "score": "0-0",
+          "sitePercent": 2.52,
+          "apiLayOdds": 38,
+          "apiReturnPercent": 2.7027027027027026,
+          "ratio": 0.9323999999999999,
+          "apiBackOdds": 24,
+          "apiLaySize": 20.62,
+          "marketId": "1.264511234"
+        },
+        {
+          "score": "0-1",
+          "sitePercent": 2.77,
+          "apiLayOdds": 32,
+          "apiReturnPercent": 3.225806451612903,
+          "ratio": 0.8587,
+          "apiBackOdds": 24,
+          "apiLaySize": 37.73,
+          "marketId": "1.264511234"
+        },
+        {
+          "score": "2-0",
+          "sitePercent": 4.8,
+          "apiLayOdds": 17,
+          "apiReturnPercent": 6.25,
+          "ratio": 0.768,
+          "apiBackOdds": 12.5,
+          "apiLaySize": 1.31,
+          "marketId": "1.264511234"
+        },
+        {
+          "score": "1-1",
+          "sitePercent": 5.56,
+          "apiLayOdds": 14,
+          "apiReturnPercent": 7.6923076923076925,
+          "ratio": 0.7228,
+          "apiBackOdds": 10.5,
+          "apiLaySize": 1.6,
+          "marketId": "1.264511234"
+        },
+        {
+          "score": "0-2",
+          "sitePercent": 2.03,
+          "apiLayOdds": 55,
+          "apiReturnPercent": 1.8518518518518519,
+          "ratio": 1.0961999999999998,
+          "apiBackOdds": 34,
+          "apiLaySize": 20.44,
+          "marketId": "1.264511234"
+        },
+        {
+          "score": "2-1",
+          "sitePercent": 5.27,
+          "apiLayOdds": 12.5,
+          "apiReturnPercent": 8.695652173913043,
+          "ratio": 0.60605,
+          "apiBackOdds": 9.2,
+          "apiLaySize": 1.79,
+          "marketId": "1.264511234"
+        },
+        {
+          "score": "2-2",
+          "sitePercent": 3.52,
+          "apiLayOdds": 18.5,
+          "apiReturnPercent": 5.714285714285714,
+          "ratio": 0.616,
+          "apiBackOdds": 14.5,
+          "apiLaySize": 1.21,
+          "marketId": "1.264511234"
+        },
+        {
+          "score": "0-3",
+          "sitePercent": 1.28,
+          "apiLayOdds": 110,
+          "apiReturnPercent": 0.9174311926605505,
+          "ratio": 1.3952,
+          "apiBackOdds": 75,
+          "apiLaySize": 22.83,
+          "marketId": "1.264511234"
+        },
+        {
+          "score": "3-0",
+          "sitePercent": 4.06,
+          "apiLayOdds": 21,
+          "apiReturnPercent": 5.0,
+          "ratio": 0.8119999999999998,
+          "apiBackOdds": 16,
+          "apiLaySize": 1.06,
+          "marketId": "1.264511234"
+        },
+        {
+          "score": "3-3",
+          "sitePercent": 1.1,
+          "apiLayOdds": 65,
+          "apiReturnPercent": 1.5625,
+          "ratio": 0.7040000000000001,
+          "apiBackOdds": 44,
+          "apiLaySize": 36.52,
+          "marketId": "1.264511234"
+        },
+        {
+          "score": "1-2",
+          "sitePercent": 3.52,
+          "apiLayOdds": 24,
+          "apiReturnPercent": 4.3478260869565215,
+          "ratio": 0.8096,
+          "apiBackOdds": 17.5,
+          "apiLaySize": 101.88,
+          "marketId": "1.264511234"
+        },
+        {
+          "score": "3-1",
+          "sitePercent": 4.06,
+          "apiLayOdds": 14,
+          "apiReturnPercent": 7.6923076923076925,
+          "ratio": 0.5277999999999999,
+          "apiBackOdds": 12.5,
+          "apiLaySize": 1,
+          "marketId": "1.264511234"
+        },
+        {
+          "score": "1-3",
+          "sitePercent": 1.82,
+          "apiLayOdds": 55,
+          "apiReturnPercent": 1.8518518518518519,
+          "ratio": 0.9828,
+          "apiBackOdds": 38,
+          "apiLaySize": 43.08,
+          "marketId": "1.264511234"
+        },
+        {
+          "score": "3-2",
+          "sitePercent": 2.52,
+          "apiLayOdds": 23,
+          "apiReturnPercent": 4.545454545454546,
+          "ratio": 0.5544,
+          "apiBackOdds": 18.5,
+          "apiLaySize": 1,
+          "marketId": "1.264511234"
+        },
+        {
+          "score": "2-3",
+          "sitePercent": 1.82,
+          "apiLayOdds": 50,
+          "apiReturnPercent": 2.0408163265306123,
+          "ratio": 0.8918,
+          "apiBackOdds": 34,
+          "apiLaySize": 51.27,
+          "marketId": "1.264511234"
+        }
+      ]
+    },
+    {
+      "eventId": "36239988",
+      "fixture": "FC Lochin v Fardu Ferghana",
+      "league": "Uzbekistan 1st Division",
+      "kickoff": "2026-10-26T10:00:00.000Z",
+      "siteCapturedAt": "2026-10-26T08:34:49.136Z",
+      "apiCapturedAt": "2026-10-26T08:31:50.330213+00:00",
+      "captureGapSeconds": 178.805787,
+      "apiMeta": {
+        "feed": "prematch",
+        "receivedAt": "2026-10-26T08:31:40.413Z",
+        "seq": 298008,
+        "delta_seq": 0,
+        "stale": false,
+        "age_ms": 9577,
+        "snapshot_age_ms": 9577,
+        "event_count": 883
+      },
+      "n": 16,
+      "medianRatio": 0.7040000000000001,
+      "minRatio": 0.5425,
+      "maxRatio": 0.9828,
+      "nearHalf": 1,
+      "rows": [
+        {
+          "score": "1-0",
+          "sitePercent": 3.1,
+          "apiLayOdds": 18.5,
+          "apiReturnPercent": 5.714285714285714,
+          "ratio": 0.5425,
+          "apiBackOdds": 13.5,
+          "apiLaySize": 1.21,
+          "marketId": "1.264515610"
+        },
+        {
+          "score": "0-0",
+          "sitePercent": 2.03,
+          "apiLayOdds": 34,
+          "apiReturnPercent": 3.0303030303030303,
+          "ratio": 0.6698999999999999,
+          "apiBackOdds": 23,
+          "apiLaySize": 18.34,
+          "marketId": "1.264515610"
+        },
+        {
+          "score": "0-1",
+          "sitePercent": 2.52,
+          "apiLayOdds": 24,
+          "apiReturnPercent": 4.3478260869565215,
+          "ratio": 0.5796,
+          "apiBackOdds": 18,
+          "apiLaySize": 27.54,
+          "marketId": "1.264515610"
+        },
+        {
+          "score": "2-0",
+          "sitePercent": 3.1,
+          "apiLayOdds": 20,
+          "apiReturnPercent": 5.2631578947368425,
+          "ratio": 0.589,
+          "apiBackOdds": 15.5,
+          "apiLaySize": 1.12,
+          "marketId": "1.264515610"
+        },
+        {
+          "score": "1-1",
+          "sitePercent": 5.56,
+          "apiLayOdds": 11.5,
+          "apiReturnPercent": 9.523809523809524,
+          "ratio": 0.5838,
+          "apiBackOdds": 9,
+          "apiLaySize": 1.95,
+          "marketId": "1.264515610"
+        },
+        {
+          "score": "0-2",
+          "sitePercent": 2.3,
+          "apiLayOdds": 32,
+          "apiReturnPercent": 3.225806451612903,
+          "ratio": 0.713,
+          "apiBackOdds": 23,
+          "apiLaySize": 22.61,
+          "marketId": "1.264515610"
+        },
+        {
+          "score": "2-1",
+          "sitePercent": 4.8,
+          "apiLayOdds": 13.5,
+          "apiReturnPercent": 8.0,
+          "ratio": 0.6,
+          "apiBackOdds": 10.5,
+          "apiLaySize": 1.66,
+          "marketId": "1.264515610"
+        },
+        {
+          "score": "2-2",
+          "sitePercent": 4.8,
+          "apiLayOdds": 18,
+          "apiReturnPercent": 5.882352941176471,
+          "ratio": 0.816,
+          "apiBackOdds": 13.5,
+          "apiLaySize": 1.24,
+          "marketId": "1.264515610"
+        },
+        {
+          "score": "0-3",
+          "sitePercent": 1.55,
+          "apiLayOdds": 60,
+          "apiReturnPercent": 1.694915254237288,
+          "ratio": 0.9145,
+          "apiBackOdds": 44,
+          "apiLaySize": 10.31,
+          "marketId": "1.264515610"
+        },
+        {
+          "score": "3-0",
+          "sitePercent": 2.52,
+          "apiLayOdds": 32,
+          "apiReturnPercent": 3.225806451612903,
+          "ratio": 0.7812,
+          "apiBackOdds": 24,
+          "apiLaySize": 19.29,
+          "marketId": "1.264515610"
+        },
+        {
+          "score": "3-3",
+          "sitePercent": 1.1,
+          "apiLayOdds": 65,
+          "apiReturnPercent": 1.5625,
+          "ratio": 0.7040000000000001,
+          "apiBackOdds": 5.4,
+          "apiLaySize": 10.88,
+          "marketId": "1.264515610"
+        },
+        {
+          "score": "1-2",
+          "sitePercent": 4.06,
+          "apiLayOdds": 17.5,
+          "apiReturnPercent": 6.0606060606060606,
+          "ratio": 0.6698999999999999,
+          "apiBackOdds": 13,
+          "apiLaySize": 1.28,
+          "marketId": "1.264515610"
+        },
+        {
+          "score": "3-1",
+          "sitePercent": 3.52,
+          "apiLayOdds": 21,
+          "apiReturnPercent": 5.0,
+          "ratio": 0.7040000000000001,
+          "apiBackOdds": 17,
+          "apiLaySize": 2,
+          "marketId": "1.264515610"
+        },
+        {
+          "score": "1-3",
+          "sitePercent": 2.52,
+          "apiLayOdds": 38,
+          "apiReturnPercent": 2.7027027027027026,
+          "ratio": 0.9323999999999999,
+          "apiBackOdds": 24,
+          "apiLaySize": 17.22,
+          "marketId": "1.264515610"
+        },
+        {
+          "score": "3-2",
+          "sitePercent": 2.77,
+          "apiLayOdds": 34,
+          "apiReturnPercent": 3.0303030303030303,
+          "ratio": 0.9140999999999999,
+          "apiBackOdds": 23,
+          "apiLaySize": 20.84,
+          "marketId": "1.264515610"
+        },
+        {
+          "score": "2-3",
+          "sitePercent": 2.52,
+          "apiLayOdds": 40,
+          "apiReturnPercent": 2.5641025641025643,
+          "ratio": 0.9828,
+          "apiBackOdds": 26,
+          "apiLaySize": 16.59,
+          "marketId": "1.264515610"
+        }
+      ]
+    },
+    {
+      "eventId": "36239995",
+      "fixture": "FK Metallurg Bekabad v Gazalkent",
+      "league": "Uzbekistan 1st Division",
+      "kickoff": "2026-10-26T12:00:00.000Z",
+      "siteCapturedAt": "2026-10-26T08:34:49.748Z",
+      "apiCapturedAt": "2026-10-26T08:32:26.525209+00:00",
+      "captureGapSeconds": 143.222791,
+      "apiMeta": {
+        "feed": "prematch",
+        "receivedAt": "2026-10-26T08:32:20.938Z",
+        "seq": 298012,
+        "delta_seq": 0,
+        "stale": false,
+        "age_ms": 5120,
+        "snapshot_age_ms": 5120,
+        "event_count": 883
+      },
+      "n": 16,
+      "medianRatio": 0.784125,
+      "minRatio": 0.65875,
+      "maxRatio": 1.3795000000000002,
+      "nearHalf": 0,
+      "rows": [
+        {
+          "score": "1-0",
+          "sitePercent": 4.06,
+          "apiLayOdds": 17.5,
+          "apiReturnPercent": 6.0606060606060606,
+          "ratio": 0.6698999999999999,
+          "apiBackOdds": 12.5,
+          "apiLaySize": 19.75,
+          "marketId": "1.264515700"
+        },
+        {
+          "score": "0-0",
+          "sitePercent": 2.77,
+          "apiLayOdds": 36,
+          "apiReturnPercent": 2.857142857142857,
+          "ratio": 0.9695,
+          "apiBackOdds": 24,
+          "apiLaySize": 20,
+          "marketId": "1.264515700"
+        },
+        {
+          "score": "0-1",
+          "sitePercent": 3.1,
+          "apiLayOdds": 29,
+          "apiReturnPercent": 3.5714285714285716,
+          "ratio": 0.868,
+          "apiBackOdds": 17.5,
+          "apiLaySize": 53.8,
+          "marketId": "1.264515700"
+        },
+        {
+          "score": "2-0",
+          "sitePercent": 4.06,
+          "apiLayOdds": 18,
+          "apiReturnPercent": 5.882352941176471,
+          "ratio": 0.6901999999999999,
+          "apiBackOdds": 13,
+          "apiLaySize": 20,
+          "marketId": "1.264515700"
+        },
+        {
+          "score": "1-1",
+          "sitePercent": 6.21,
+          "apiLayOdds": 13.5,
+          "apiReturnPercent": 8.0,
+          "ratio": 0.77625,
+          "apiBackOdds": 9.4,
+          "apiLaySize": 118.28,
+          "marketId": "1.264515700"
+        },
+        {
+          "score": "0-2",
+          "sitePercent": 2.52,
+          "apiLayOdds": 44,
+          "apiReturnPercent": 2.3255813953488373,
+          "ratio": 1.0836,
+          "apiBackOdds": 4.2,
+          "apiLaySize": 35.97,
+          "marketId": "1.264515700"
+        },
+        {
+          "score": "2-1",
+          "sitePercent": 5.27,
+          "apiLayOdds": 13.5,
+          "apiReturnPercent": 8.0,
+          "ratio": 0.65875,
+          "apiBackOdds": 9.4,
+          "apiLaySize": 120.14,
+          "marketId": "1.264515700"
+        },
+        {
+          "score": "2-2",
+          "sitePercent": 4.4,
+          "apiLayOdds": 19,
+          "apiReturnPercent": 5.555555555555555,
+          "ratio": 0.792,
+          "apiBackOdds": 11.5,
+          "apiLaySize": 80.95,
+          "marketId": "1.264515700"
+        },
+        {
+          "score": "0-3",
+          "sitePercent": 1.55,
+          "apiLayOdds": 90,
+          "apiReturnPercent": 1.1235955056179776,
+          "ratio": 1.3795000000000002,
+          "apiBackOdds": 4.4,
+          "apiLaySize": 16.74,
+          "marketId": "1.264515700"
+        },
+        {
+          "score": "3-0",
+          "sitePercent": 2.77,
+          "apiLayOdds": 25,
+          "apiReturnPercent": 4.166666666666667,
+          "ratio": 0.6648000000000001,
+          "apiBackOdds": 20,
+          "apiLaySize": 20,
+          "marketId": "1.264515700"
+        },
+        {
+          "score": "3-3",
+          "sitePercent": 1.1,
+          "apiLayOdds": 65,
+          "apiReturnPercent": 1.5625,
+          "ratio": 0.7040000000000001,
+          "apiBackOdds": 4.4,
+          "apiLaySize": 25.87,
+          "marketId": "1.264515700"
+        },
+        {
+          "score": "1-2",
+          "sitePercent": 4.06,
+          "apiLayOdds": 21,
+          "apiReturnPercent": 5.0,
+          "ratio": 0.8119999999999998,
+          "apiBackOdds": 13,
+          "apiLaySize": 79.23,
+          "marketId": "1.264515700"
+        },
+        {
+          "score": "3-1",
+          "sitePercent": 3.52,
+          "apiLayOdds": 21,
+          "apiReturnPercent": 5.0,
+          "ratio": 0.7040000000000001,
+          "apiBackOdds": 14.5,
+          "apiLaySize": 79.08,
+          "marketId": "1.264515700"
+        },
+        {
+          "score": "1-3",
+          "sitePercent": 2.52,
+          "apiLayOdds": 48,
+          "apiReturnPercent": 2.127659574468085,
+          "ratio": 1.1844,
+          "apiBackOdds": 4.2,
+          "apiLaySize": 37.86,
+          "marketId": "1.264515700"
+        },
+        {
+          "score": "3-2",
+          "sitePercent": 2.52,
+          "apiLayOdds": 30,
+          "apiReturnPercent": 3.4482758620689653,
+          "ratio": 0.7308,
+          "apiBackOdds": 18,
+          "apiLaySize": 52.44,
+          "marketId": "1.264515700"
+        },
+        {
+          "score": "2-3",
+          "sitePercent": 2.03,
+          "apiLayOdds": 46,
+          "apiReturnPercent": 2.2222222222222223,
+          "ratio": 0.9135,
+          "apiBackOdds": 4.2,
+          "apiLaySize": 36.89,
+          "marketId": "1.264515700"
+        }
+      ]
+    },
+    {
+      "eventId": "36240219",
+      "fixture": "Negele Arsi Ketema v Adama Kenema fc",
+      "league": "Ethiopian Premier League",
+      "kickoff": "2026-10-26T12:00:00.000Z",
+      "siteCapturedAt": "2026-10-26T08:35:12.058Z",
+      "apiCapturedAt": "2026-10-26T08:32:29.734764+00:00",
+      "captureGapSeconds": 162.323236,
+      "apiMeta": {
+        "feed": "prematch",
+        "receivedAt": "2026-10-26T08:32:20.938Z",
+        "seq": 298012,
+        "delta_seq": 0,
+        "stale": false,
+        "age_ms": 8311,
+        "snapshot_age_ms": 8311,
+        "event_count": 883
+      },
+      "n": 16,
+      "medianRatio": 0.9075,
+      "minRatio": 0.48438000000000003,
+      "maxRatio": 2.6585,
+      "nearHalf": 2,
+      "rows": [
+        {
+          "score": "1-0",
+          "sitePercent": 9.6,
+          "apiLayOdds": 7.2,
+          "apiReturnPercent": 16.129032258064516,
+          "ratio": 0.5952,
+          "apiBackOdds": 5.7,
+          "apiLaySize": 189.48,
+          "marketId": "1.264538177"
+        },
+        {
+          "score": "0-0",
+          "sitePercent": 8.79,
+          "apiLayOdds": 7.4,
+          "apiReturnPercent": 15.625,
+          "ratio": 0.56256,
+          "apiBackOdds": 4.7,
+          "apiLaySize": 199.79,
+          "marketId": "1.264538177"
+        },
+        {
+          "score": "0-1",
+          "sitePercent": 6.21,
+          "apiLayOdds": 8.8,
+          "apiReturnPercent": 12.82051282051282,
+          "ratio": 0.48438000000000003,
+          "apiBackOdds": 6.8,
+          "apiLaySize": 170.77,
+          "marketId": "1.264538177"
+        },
+        {
+          "score": "2-0",
+          "sitePercent": 6.6,
+          "apiLayOdds": 17,
+          "apiReturnPercent": 6.25,
+          "ratio": 1.056,
+          "apiBackOdds": 13,
+          "apiLaySize": 89.04,
+          "marketId": "1.264538177"
+        },
+        {
+          "score": "1-1",
+          "sitePercent": 7.54,
+          "apiLayOdds": 7.6,
+          "apiReturnPercent": 15.151515151515152,
+          "ratio": 0.49763999999999997,
+          "apiBackOdds": 5.9,
+          "apiLaySize": 199.76,
+          "marketId": "1.264538177"
+        },
+        {
+          "score": "0-2",
+          "sitePercent": 3.1,
+          "apiLayOdds": 24,
+          "apiReturnPercent": 4.3478260869565215,
+          "ratio": 0.713,
+          "apiBackOdds": 18.5,
+          "apiLaySize": 56.42,
+          "marketId": "1.264538177"
+        },
+        {
+          "score": "2-1",
+          "sitePercent": 4.8,
+          "apiLayOdds": 16,
+          "apiReturnPercent": 6.666666666666667,
+          "ratio": 0.72,
+          "apiBackOdds": 12,
+          "apiLaySize": 84.47,
+          "marketId": "1.264538177"
+        },
+        {
+          "score": "2-2",
+          "sitePercent": 2.3,
+          "apiLayOdds": 34,
+          "apiReturnPercent": 3.0303030303030303,
+          "ratio": 0.7589999999999999,
+          "apiBackOdds": 25,
+          "apiLaySize": 52.05,
+          "marketId": "1.264538177"
+        },
+        {
+          "score": "0-3",
+          "sitePercent": 1.28,
+          "apiLayOdds": 110,
+          "apiReturnPercent": 0.9174311926605505,
+          "ratio": 1.3952,
+          "apiBackOdds": 65,
+          "apiLaySize": 34.55,
+          "marketId": "1.264538177"
+        },
+        {
+          "score": "3-0",
+          "sitePercent": 3.52,
+          "apiLayOdds": 65,
+          "apiReturnPercent": 1.5625,
+          "ratio": 2.2528,
+          "apiBackOdds": 40,
+          "apiLaySize": 56.85,
+          "marketId": "1.264538177"
+        },
+        {
+          "score": "3-3",
+          "sitePercent": 0.65,
+          "apiLayOdds": 410,
+          "apiReturnPercent": 0.24449877750611246,
+          "ratio": 2.6585,
+          "apiBackOdds": 85,
+          "apiLaySize": 7.77,
+          "marketId": "1.264538177"
+        },
+        {
+          "score": "1-2",
+          "sitePercent": 3.1,
+          "apiLayOdds": 19.5,
+          "apiReturnPercent": 5.405405405405405,
+          "ratio": 0.5735,
+          "apiBackOdds": 14.5,
+          "apiLaySize": 78.69,
+          "marketId": "1.264538177"
+        },
+        {
+          "score": "3-1",
+          "sitePercent": 2.3,
+          "apiLayOdds": 65,
+          "apiReturnPercent": 1.5625,
+          "ratio": 1.472,
+          "apiBackOdds": 42,
+          "apiLaySize": 51.36,
+          "marketId": "1.264538177"
+        },
+        {
+          "score": "1-3",
+          "sitePercent": 1.28,
+          "apiLayOdds": 90,
+          "apiReturnPercent": 1.1235955056179776,
+          "ratio": 1.1392,
+          "apiBackOdds": 60,
+          "apiLaySize": 33.27,
+          "marketId": "1.264538177"
+        },
+        {
+          "score": "3-2",
+          "sitePercent": 1.28,
+          "apiLayOdds": 130,
+          "apiReturnPercent": 0.7751937984496124,
+          "ratio": 1.6512,
+          "apiBackOdds": 80,
+          "apiLaySize": 26.96,
+          "marketId": "1.264538177"
+        },
+        {
+          "score": "2-3",
+          "sitePercent": 1.03,
+          "apiLayOdds": 150,
+          "apiReturnPercent": 0.6711409395973155,
+          "ratio": 1.5347,
+          "apiBackOdds": 100,
+          "apiLaySize": 20.21,
+          "marketId": "1.264538177"
+        }
+      ]
+    }
+  ],
+  "finalAPISensitivityCheck": {
+    "capturedAt": "2026-10-26T08:37:14.114641+00:00",
+    "unchangedLayQuotes": 109,
+    "comparedLayQuotes": 112,
+    "medianRatioUsingFinalAPI": 0.74228,
+    "nearHalfUsingFinalAPI": 7,
+    "rangeUsingFinalAPI": [
+      0.48438000000000003,
+      2.6585
+    ],
+    "note": "Sensitivity check reuses site captures with a later API snapshot; this is not simultaneous pricing."
+  }
+}

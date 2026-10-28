@@ -1,0 +1,388 @@
+{
+  "formula": "API zero-commission return on maximum risk (%) = 100 / (layOdds - 1)",
+  "qualification": "Site values are observed displayed percentages. Site fee and settlement rules were not verified. Captures are near-time, not simultaneous.",
+  "results": [
+    {
+      "fixture": "Man Utd v Bournemouth",
+      "apiEventId": "36177347",
+      "siteMatchId": "12070905",
+      "siteUrl": "https://fb3.1cuf.com/#/SoccerTrade?match_id=12070905&home_name=%E6%9B%BC%E8%81%94&away_name=%E4%BC%AF%E6%81%A9%E8%8C%85%E6%96%AF",
+      "siteCapturedAt": "2026-10-25T13:38:48.919Z",
+      "apiCapturedAt": "2026-10-25T13:38:55.954010+00:00",
+      "captureGapSeconds": 7.035,
+      "apiFeedStale": false,
+      "apiKickoff": "2026-10-25T14:00:00.000Z",
+      "apiTournament": "English Premier League",
+      "siteScreenshot": "manutd-site.jpg",
+      "rows": [
+        {
+          "score": "0-0",
+          "sitePercent": "3.52",
+          "apiLayOdds": "16.5",
+          "apiReturnPercent": "6.45",
+          "differencePercentagePoints": "-2.93",
+          "marketId": "1.263659383",
+          "runnerId": 1,
+          "handicap": 0,
+          "layUnchangedSinceInitialSnapshot": true
+        },
+        {
+          "score": "0-1",
+          "sitePercent": "3.52",
+          "apiLayOdds": "14",
+          "apiReturnPercent": "7.69",
+          "differencePercentagePoints": "-4.17",
+          "marketId": "1.263659383",
+          "runnerId": 4,
+          "handicap": 0,
+          "layUnchangedSinceInitialSnapshot": true
+        },
+        {
+          "score": "0-2",
+          "sitePercent": "2.52",
+          "apiLayOdds": "20",
+          "apiReturnPercent": "5.26",
+          "differencePercentagePoints": "-2.74",
+          "marketId": "1.263659383",
+          "runnerId": 9,
+          "handicap": 0,
+          "layUnchangedSinceInitialSnapshot": true
+        },
+        {
+          "score": "0-3",
+          "sitePercent": "1.28",
+          "apiLayOdds": "44",
+          "apiReturnPercent": "2.33",
+          "differencePercentagePoints": "-1.05",
+          "marketId": "1.263659383",
+          "runnerId": 16,
+          "handicap": 0,
+          "layUnchangedSinceInitialSnapshot": true
+        },
+        {
+          "score": "1-0",
+          "sitePercent": "4.4",
+          "apiLayOdds": "12",
+          "apiReturnPercent": "9.09",
+          "differencePercentagePoints": "-4.69",
+          "marketId": "1.263659383",
+          "runnerId": 2,
+          "handicap": 0,
+          "layUnchangedSinceInitialSnapshot": true
+        },
+        {
+          "score": "1-1",
+          "sitePercent": "7.04",
+          "apiLayOdds": "7.8",
+          "apiReturnPercent": "14.71",
+          "differencePercentagePoints": "-7.67",
+          "marketId": "1.263659383",
+          "runnerId": 3,
+          "handicap": 0,
+          "layUnchangedSinceInitialSnapshot": true
+        },
+        {
+          "score": "1-2",
+          "sitePercent": "4.06",
+          "apiLayOdds": "13",
+          "apiReturnPercent": "8.33",
+          "differencePercentagePoints": "-4.27",
+          "marketId": "1.263659383",
+          "runnerId": 8,
+          "handicap": 0,
+          "layUnchangedSinceInitialSnapshot": true
+        },
+        {
+          "score": "1-3",
+          "sitePercent": "2.03",
+          "apiLayOdds": "29",
+          "apiReturnPercent": "3.57",
+          "differencePercentagePoints": "-1.54",
+          "marketId": "1.263659383",
+          "runnerId": 15,
+          "handicap": 0,
+          "layUnchangedSinceInitialSnapshot": true
+        },
+        {
+          "score": "2-0",
+          "sitePercent": "4.06",
+          "apiLayOdds": "17",
+          "apiReturnPercent": "6.25",
+          "differencePercentagePoints": "-2.19",
+          "marketId": "1.263659383",
+          "runnerId": 5,
+          "handicap": 0,
+          "layUnchangedSinceInitialSnapshot": true
+        },
+        {
+          "score": "2-1",
+          "sitePercent": "5.27",
+          "apiLayOdds": "11.5",
+          "apiReturnPercent": "9.52",
+          "differencePercentagePoints": "-4.25",
+          "marketId": "1.263659383",
+          "runnerId": 6,
+          "handicap": 0,
+          "layUnchangedSinceInitialSnapshot": true
+        },
+        {
+          "score": "2-2",
+          "sitePercent": "4.4",
+          "apiLayOdds": "15.5",
+          "apiReturnPercent": "6.90",
+          "differencePercentagePoints": "-2.50",
+          "marketId": "1.263659383",
+          "runnerId": 7,
+          "handicap": 0,
+          "layUnchangedSinceInitialSnapshot": true
+        },
+        {
+          "score": "2-3",
+          "sitePercent": "1.82",
+          "apiLayOdds": "36",
+          "apiReturnPercent": "2.86",
+          "differencePercentagePoints": "-1.04",
+          "marketId": "1.263659383",
+          "runnerId": 14,
+          "handicap": 0,
+          "layUnchangedSinceInitialSnapshot": true
+        },
+        {
+          "score": "3-0",
+          "sitePercent": "2.3",
+          "apiLayOdds": "32",
+          "apiReturnPercent": "3.23",
+          "differencePercentagePoints": "-0.93",
+          "marketId": "1.263659383",
+          "runnerId": 10,
+          "handicap": 0,
+          "layUnchangedSinceInitialSnapshot": true
+        },
+        {
+          "score": "3-1",
+          "sitePercent": "3.1",
+          "apiLayOdds": "24",
+          "apiReturnPercent": "4.35",
+          "differencePercentagePoints": "-1.25",
+          "marketId": "1.263659383",
+          "runnerId": 11,
+          "handicap": 0,
+          "layUnchangedSinceInitialSnapshot": true
+        },
+        {
+          "score": "3-2",
+          "sitePercent": "2.3",
+          "apiLayOdds": "32",
+          "apiReturnPercent": "3.23",
+          "differencePercentagePoints": "-0.93",
+          "marketId": "1.263659383",
+          "runnerId": 12,
+          "handicap": 0,
+          "layUnchangedSinceInitialSnapshot": true
+        },
+        {
+          "score": "3-3",
+          "sitePercent": "1.1",
+          "apiLayOdds": "70",
+          "apiReturnPercent": "1.45",
+          "differencePercentagePoints": "-0.35",
+          "marketId": "1.263659383",
+          "runnerId": 13,
+          "handicap": 0,
+          "layUnchangedSinceInitialSnapshot": true
+        }
+      ]
+    },
+    {
+      "fixture": "Liverpool v Brighton",
+      "apiEventId": "36177487",
+      "siteMatchId": "12070906",
+      "siteUrl": "https://fb3.1cuf.com/#/SoccerTrade?match_id=12070906&home_name=%E5%88%A9%E7%89%A9%E6%B5%A6&away_name=%E5%B8%83%E8%8E%B1%E9%A1%BF",
+      "siteCapturedAt": "2026-10-25T13:39:50.831Z",
+      "apiCapturedAt": "2026-10-25T13:40:00.978803+00:00",
+      "captureGapSeconds": 10.148,
+      "apiFeedStale": false,
+      "apiKickoff": "2026-10-25T14:00:00.000Z",
+      "apiTournament": "English Premier League",
+      "siteScreenshot": "liverpool-site.jpg",
+      "rows": [
+        {
+          "score": "0-0",
+          "sitePercent": "2.77",
+          "apiLayOdds": "24",
+          "apiReturnPercent": "4.35",
+          "differencePercentagePoints": "-1.58",
+          "marketId": "1.263659245",
+          "runnerId": 1,
+          "handicap": 0,
+          "layUnchangedSinceInitialSnapshot": true
+        },
+        {
+          "score": "0-1",
+          "sitePercent": "3.1",
+          "apiLayOdds": "19",
+          "apiReturnPercent": "5.56",
+          "differencePercentagePoints": "-2.46",
+          "marketId": "1.263659245",
+          "runnerId": 4,
+          "handicap": 0,
+          "layUnchangedSinceInitialSnapshot": true
+        },
+        {
+          "score": "0-2",
+          "sitePercent": "2.52",
+          "apiLayOdds": "27",
+          "apiReturnPercent": "3.85",
+          "differencePercentagePoints": "-1.33",
+          "marketId": "1.263659245",
+          "runnerId": 9,
+          "handicap": 0,
+          "layUnchangedSinceInitialSnapshot": true
+        },
+        {
+          "score": "0-3",
+          "sitePercent": "1.28",
+          "apiLayOdds": "65",
+          "apiReturnPercent": "1.56",
+          "differencePercentagePoints": "-0.28",
+          "marketId": "1.263659245",
+          "runnerId": 16,
+          "handicap": 0,
+          "layUnchangedSinceInitialSnapshot": false
+        },
+        {
+          "score": "1-0",
+          "sitePercent": "4.06",
+          "apiLayOdds": "13.5",
+          "apiReturnPercent": "8.00",
+          "differencePercentagePoints": "-3.94",
+          "marketId": "1.263659245",
+          "runnerId": 2,
+          "handicap": 0,
+          "layUnchangedSinceInitialSnapshot": true
+        },
+        {
+          "score": "1-1",
+          "sitePercent": "6.6",
+          "apiLayOdds": "9",
+          "apiReturnPercent": "12.50",
+          "differencePercentagePoints": "-5.90",
+          "marketId": "1.263659245",
+          "runnerId": 3,
+          "handicap": 0,
+          "layUnchangedSinceInitialSnapshot": true
+        },
+        {
+          "score": "1-2",
+          "sitePercent": "4.06",
+          "apiLayOdds": "14.5",
+          "apiReturnPercent": "7.41",
+          "differencePercentagePoints": "-3.35",
+          "marketId": "1.263659245",
+          "runnerId": 8,
+          "handicap": 0,
+          "layUnchangedSinceInitialSnapshot": true
+        },
+        {
+          "score": "1-3",
+          "sitePercent": "2.03",
+          "apiLayOdds": "34",
+          "apiReturnPercent": "3.03",
+          "differencePercentagePoints": "-1.00",
+          "marketId": "1.263659245",
+          "runnerId": 15,
+          "handicap": 0,
+          "layUnchangedSinceInitialSnapshot": false
+        },
+        {
+          "score": "2-0",
+          "sitePercent": "3.52",
+          "apiLayOdds": "14.5",
+          "apiReturnPercent": "7.41",
+          "differencePercentagePoints": "-3.89",
+          "marketId": "1.263659245",
+          "runnerId": 5,
+          "handicap": 0,
+          "layUnchangedSinceInitialSnapshot": true
+        },
+        {
+          "score": "2-1",
+          "sitePercent": "5.27",
+          "apiLayOdds": "10.5",
+          "apiReturnPercent": "10.53",
+          "differencePercentagePoints": "-5.26",
+          "marketId": "1.263659245",
+          "runnerId": 6,
+          "handicap": 0,
+          "layUnchangedSinceInitialSnapshot": true
+        },
+        {
+          "score": "2-2",
+          "sitePercent": "4.4",
+          "apiLayOdds": "14.5",
+          "apiReturnPercent": "7.41",
+          "differencePercentagePoints": "-3.01",
+          "marketId": "1.263659245",
+          "runnerId": 7,
+          "handicap": 0,
+          "layUnchangedSinceInitialSnapshot": true
+        },
+        {
+          "score": "2-3",
+          "sitePercent": "2.03",
+          "apiLayOdds": "34",
+          "apiReturnPercent": "3.03",
+          "differencePercentagePoints": "-1.00",
+          "marketId": "1.263659245",
+          "runnerId": 14,
+          "handicap": 0,
+          "layUnchangedSinceInitialSnapshot": true
+        },
+        {
+          "score": "3-0",
+          "sitePercent": "2.3",
+          "apiLayOdds": "26",
+          "apiReturnPercent": "4.00",
+          "differencePercentagePoints": "-1.70",
+          "marketId": "1.263659245",
+          "runnerId": 10,
+          "handicap": 0,
+          "layUnchangedSinceInitialSnapshot": true
+        },
+        {
+          "score": "3-1",
+          "sitePercent": "3.1",
+          "apiLayOdds": "18.5",
+          "apiReturnPercent": "5.71",
+          "differencePercentagePoints": "-2.61",
+          "marketId": "1.263659245",
+          "runnerId": 11,
+          "handicap": 0,
+          "layUnchangedSinceInitialSnapshot": true
+        },
+        {
+          "score": "3-2",
+          "sitePercent": "2.52",
+          "apiLayOdds": "24",
+          "apiReturnPercent": "4.35",
+          "differencePercentagePoints": "-1.83",
+          "marketId": "1.263659245",
+          "runnerId": 12,
+          "handicap": 0,
+          "layUnchangedSinceInitialSnapshot": true
+        },
+        {
+          "score": "3-3",
+          "sitePercent": "1.1",
+          "apiLayOdds": "55",
+          "apiReturnPercent": "1.85",
+          "differencePercentagePoints": "-0.75",
+          "marketId": "1.263659245",
+          "runnerId": 13,
+          "handicap": 0,
+          "layUnchangedSinceInitialSnapshot": true
+        }
+      ]
+    }
+  ]
+}

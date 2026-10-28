@@ -1,0 +1,286 @@
+{
+  "description": "SHA-256 manifest of original evidence copied without changes; reports/index.html is the new navigation page.",
+  "originalSitesCommit": "078cb67",
+  "files": [
+    {
+      "path": "reports/odds-platform-audit-2026-10-26/api-event-36184231.json",
+      "sha256": "1f452428a1551cef61d25d7f7cc3665a7946cbfe9c5a68cd9d08922ccebd42c9",
+      "bytes": 90369
+    },
+    {
+      "path": "reports/odds-platform-audit-2026-10-26/api-event-36225095.json",
+      "sha256": "3d277bed3a2285e4dcca378a398a1aada42bcab54386a70b58a0a6ccb4b466f1",
+      "bytes": 90623
+    },
+    {
+      "path": "reports/odds-platform-audit-2026-10-26/api-event-36237959.json",
+      "sha256": "2a0c89e8f86cf671ead8569bdf2247270717152b1cb75b0820f3d682daeb9e3d",
+      "bytes": 90245
+    },
+    {
+      "path": "reports/odds-platform-audit-2026-10-26/api-event-36239760.json",
+      "sha256": "3494e5ebde7d9c6c1b62e9b843a0a53f8a7a1ee406824237eacea3c78d3b0d63",
+      "bytes": 79109
+    },
+    {
+      "path": "reports/odds-platform-audit-2026-10-26/api-event-36239988.json",
+      "sha256": "40df692bd9d43914834da67a2f7f9c0dccab5c247b5d703e2d7cbbb4bf76f9fd",
+      "bytes": 78805
+    },
+    {
+      "path": "reports/odds-platform-audit-2026-10-26/api-event-36239995.json",
+      "sha256": "fff865f909083ab648746b33811dd13aae2f746253b241001850490cfe85e843",
+      "bytes": 79055
+    },
+    {
+      "path": "reports/odds-platform-audit-2026-10-26/api-event-36240219.json",
+      "sha256": "8005cb4c21c5a0c811e6943320b46754edbc40835e3d387eefd1b87d9b6b67ec",
+      "bytes": 90629
+    },
+    {
+      "path": "reports/odds-platform-audit-2026-10-26/api-final-raw.json",
+      "sha256": "8387ee04486dbf7710484277de7b84b6ff4faee699380c51e5873c8319939806",
+      "bytes": 18437109
+    },
+    {
+      "path": "reports/odds-platform-audit-2026-10-26/api-prematch.json",
+      "sha256": "6f9f2a86c26e08f01e4cf1f0a9409f2bf89c1665a032e1362654ff970979362d",
+      "bytes": 2455065
+    },
+    {
+      "path": "reports/odds-platform-audit-2026-10-26/comparison.csv",
+      "sha256": "36bc26e7e509d5ea417a6bb401861f728b4189c2d1babbca5153ae030b3ff84f",
+      "bytes": 20421
+    },
+    {
+      "path": "reports/odds-platform-audit-2026-10-26/comparison.json",
+      "sha256": "7d5bca03d43c6f3506f2f136114784a38d16ea32ceee9e50d0136c981810bd5d",
+      "bytes": 37840
+    },
+    {
+      "path": "reports/odds-platform-audit-2026-10-26/report.html",
+      "sha256": "e6b4344c7597214c621802a22ae752ea50261886e17c7a7dda1c50623201b9ed",
+      "bytes": 13589
+    },
+    {
+      "path": "reports/odds-platform-audit-2026-10-26/site-36184231.jpg",
+      "sha256": "7fbf7608fd4f8c9439f474acee86c05080e592aee2abef5c8b67d4179a4e5d29",
+      "bytes": 49283
+    },
+    {
+      "path": "reports/odds-platform-audit-2026-10-26/site-36184231.txt",
+      "sha256": "9c08ac9c2294c86d6cfccafc4b2fae9b6f883584db35a934eeebe8d4b4652098",
+      "bytes": 9889
+    },
+    {
+      "path": "reports/odds-platform-audit-2026-10-26/site-36225095.jpg",
+      "sha256": "89ddee94d52b31b7deb594ab7cefff47bdd9320a7ad701457dbc9196f54b51e5",
+      "bytes": 75906
+    },
+    {
+      "path": "reports/odds-platform-audit-2026-10-26/site-36225095.txt",
+      "sha256": "7868991624baf9a959c7f63265246f3cdb51eeec20bd346f34e535d5badc02d5",
+      "bytes": 8146
+    },
+    {
+      "path": "reports/odds-platform-audit-2026-10-26/site-36237959.jpg",
+      "sha256": "9832659f9a40bdf9be98b6131f39da3ce8d46e08fa9db1556b95c741ecb1d6a7",
+      "bytes": 76330
+    },
+    {
+      "path": "reports/odds-platform-audit-2026-10-26/site-36237959.txt",
+      "sha256": "9c99b3c880f27ebc0d4dcd3e883482a6494c662ff7b0769c5a44e362be055baa",
+      "bytes": 8138
+    },
+    {
+      "path": "reports/odds-platform-audit-2026-10-26/site-36239760.jpg",
+      "sha256": "3ff1a618f4d86dc4b8c4376a38bb7ce4e1d1e953d70d68f1a0d9170ce215a301",
+      "bytes": 74334
+    },
+    {
+      "path": "reports/odds-platform-audit-2026-10-26/site-36239760.txt",
+      "sha256": "81f2192deda28e4f6c83a6ab002c993b3bb5bc80cbd5dc08a4ce8211b8f927d3",
+      "bytes": 8157
+    },
+    {
+      "path": "reports/odds-platform-audit-2026-10-26/site-36239988.jpg",
+      "sha256": "9e1ccd66ea29820f6aa278155b98825733933e1755b4df0af3718844c7a0c818",
+      "bytes": 75637
+    },
+    {
+      "path": "reports/odds-platform-audit-2026-10-26/site-36239988.txt",
+      "sha256": "ab87ce7147dcadddf5055915f7c3d73be6222f9ab76f54d99c53dceea4374ef9",
+      "bytes": 8154
+    },
+    {
+      "path": "reports/odds-platform-audit-2026-10-26/site-36239995.jpg",
+      "sha256": "b0c0411b39b474a381a4a04200dbeb81064e9a38836c4a4864707e2c0c3a6b59",
+      "bytes": 75347
+    },
+    {
+      "path": "reports/odds-platform-audit-2026-10-26/site-36239995.txt",
+      "sha256": "bcc509e72d1338409ae84ffb5bb7ee1035213ca3eec77914ed1be4f2f4e8f1e1",
+      "bytes": 12206
+    },
+    {
+      "path": "reports/odds-platform-audit-2026-10-26/site-36240219.jpg",
+      "sha256": "2c9986de3dcfee384c4f1264df13ba5ebf60e6252ab6031f466b3c30c49499c1",
+      "bytes": 78050
+    },
+    {
+      "path": "reports/odds-platform-audit-2026-10-26/site-36240219.txt",
+      "sha256": "89a48da77ff03be7d96dd326ad89376aae7c19cc2b81df1964dae5fda1a23952",
+      "bytes": 8429
+    },
+    {
+      "path": "reports/odds-platform-audit-2026-10-26/site-captures.json",
+      "sha256": "5f6855fd2ecf7542ba55f54e08bf14faf547a2997dc23045c2482df1c4b393dd",
+      "bytes": 10263
+    },
+    {
+      "path": "reports/odds-platform-audit-2026-10-26/superseded-initial-captures.json",
+      "sha256": "6731efc1c6b747cd5f17fc79de6578a5548d503e86fa608b65ad8bb2162a829a",
+      "bytes": 10118
+    },
+    {
+      "path": "reports/odds-comparison-2026-10-25/api-comparison.html",
+      "sha256": "35410e9d5c1e022510c7004d70460515b231de231c73e277a5694419344421f2",
+      "bytes": 3365
+    },
+    {
+      "path": "reports/odds-comparison-2026-10-25/api-comparison.jpg",
+      "sha256": "040267f8e9490bdcf3f38ef7231e841c969199a808563282a08fcb7ecdc3a4c9",
+      "bytes": 118082
+    },
+    {
+      "path": "reports/odds-comparison-2026-10-25/api-event-36177347.json",
+      "sha256": "ef086ebc4b869f215856c9c4e3e6d6f83c5341eb329db3fd719c26770ce4011c",
+      "bytes": 6887
+    },
+    {
+      "path": "reports/odds-comparison-2026-10-25/api-event-36177487.json",
+      "sha256": "74a5fdffd4c88ced57dac5dbdd4207084f78185c363a416e96040114be7af278",
+      "bytes": 6877
+    },
+    {
+      "path": "reports/odds-comparison-2026-10-25/api-snapshot.json",
+      "sha256": "70e73c52214459da9181289e692779b99c4c97de40013edd4d2bb2c67c2a7909",
+      "bytes": 3416885
+    },
+    {
+      "path": "reports/odds-comparison-2026-10-25/comparison.csv",
+      "sha256": "5b2de0a840d5fa9e2dad29182ac9c62a1aea4b96f6b8d4ed15fd5094e9bfec45",
+      "bytes": 3432
+    },
+    {
+      "path": "reports/odds-comparison-2026-10-25/comparison.json",
+      "sha256": "0ca1bff3fea54a94c8ca724bcc31bb0f0699edfbab1726d6b4a293f288089a83",
+      "bytes": 12227
+    },
+    {
+      "path": "reports/odds-comparison-2026-10-25/liverpool-site-dom.txt",
+      "sha256": "18b72e9961e7dd653cc2d380d6b8d8c3cac41adafbb5946c07b1b65ebfbfb96a",
+      "bytes": 3850
+    },
+    {
+      "path": "reports/odds-comparison-2026-10-25/liverpool-site.jpg",
+      "sha256": "440c32e7ff000d5eb417b76d9b41af06fa4d86fad71e92eacdf1b27978c2c777",
+      "bytes": 41006
+    },
+    {
+      "path": "reports/odds-comparison-2026-10-25/manutd-site-dom.txt",
+      "sha256": "2b2f6913ca435f6ef3da3a9070527a64cab8ec8c194ad1ad9213a0d1cb6845c3",
+      "bytes": 3848
+    },
+    {
+      "path": "reports/odds-comparison-2026-10-25/manutd-site.jpg",
+      "sha256": "11b5e424be2e121c2889c39d5ee3ba312b5d7385fe4dd7c1c4c028b89cee6e83",
+      "bytes": 41354
+    },
+    {
+      "path": "reports/odds-comparison-2026-10-25/site-captures.json",
+      "sha256": "54e760780515e18a294e9c2620a1197885009683b061f00ad322fbab846c5b1f",
+      "bytes": 674
+    },
+    {
+      "path": "reports/isports-comparison-2026-10-26/betfair-reference.json",
+      "sha256": "f56f9ca637efc783f66c7439d78bb288a9c552daf46ede09aabb8d27440bcc2f",
+      "bytes": 21066
+    },
+    {
+      "path": "reports/isports-comparison-2026-10-26/comparison.json",
+      "sha256": "8ad559c041002d1405d05c69457891ba5b0f4791d705bbce95b3de3570375c6e",
+      "bytes": 57411
+    },
+    {
+      "path": "reports/isports-comparison-2026-10-26/correct-score.json",
+      "sha256": "f55189cfdb5ec82bead7be10e778a93fb3964d5d0543dfb061e06c0f33227333",
+      "bytes": 1889713
+    },
+    {
+      "path": "reports/isports-comparison-2026-10-26/main.json",
+      "sha256": "c15cb2d885e3ec135f7b268e227f37f09ee78846d8d1896272fffd2720f47985",
+      "bytes": 3403328
+    },
+    {
+      "path": "reports/isports-comparison-2026-10-26/report.html",
+      "sha256": "32192d886bfcd0aa5c4a9f933c7f0b60515b1797e36986728c518f446d6c9f99",
+      "bytes": 58648
+    },
+    {
+      "path": "reports/isports-comparison-2026-10-26/schedule.json",
+      "sha256": "2f91f57e7379804eea77c247e2286763d9b4bb7a9912bd540b113afdd28206f4",
+      "bytes": 231049
+    },
+    {
+      "path": "reports/isports-comparison-2026-10-26/site-212117923.jpg",
+      "sha256": "74c2da782c36bf7afaec2c9c1e5f08288bf9d866d3e4ded86030c6a80a6dc763",
+      "bytes": 72133
+    },
+    {
+      "path": "reports/isports-comparison-2026-10-26/site-212117923.txt",
+      "sha256": "011fd38db5a3a78855a29131741033a169bfab53a34c0c5dc3decb5a7f4eb51f",
+      "bytes": 8125
+    },
+    {
+      "path": "reports/isports-comparison-2026-10-26/site-222117924.jpg",
+      "sha256": "06d3719b19d654b328ab9d6f97c8ed866e9a60ae19d3961c27fd27af6c9126bf",
+      "bytes": 77497
+    },
+    {
+      "path": "reports/isports-comparison-2026-10-26/site-222117924.txt",
+      "sha256": "b37e6fe5d3b64bbd4fe8cac29ce58bf480a00e5418791e9d9653aaac5ef6533d",
+      "bytes": 8140
+    },
+    {
+      "path": "reports/isports-comparison-2026-10-26/site-228826039.jpg",
+      "sha256": "970387fd571ed6ebbb112031baed10facfcbf244a9b1fdfe35c1a516db5846d0",
+      "bytes": 78416
+    },
+    {
+      "path": "reports/isports-comparison-2026-10-26/site-228826039.txt",
+      "sha256": "048101e916fbdd874efa96e0705c87cf82fa7c3918dde6dcd7971dd0092e0fa2",
+      "bytes": 8438
+    },
+    {
+      "path": "reports/isports-comparison-2026-10-26/site-captures.json",
+      "sha256": "d58d21c140744a62213d3d7b5e6860a9f45966705207eebe89940d15996486d5",
+      "bytes": 4199
+    },
+    {
+      "path": "reports/platform-search-2026-10-26/findings.json",
+      "sha256": "d5784c16e6adf112e4f67f4b8e56be03abb59f141ca56a0e5347ba37b27c03dd",
+      "bytes": 959
+    },
+    {
+      "path": "reports/platform-search-2026-10-26/second-platform-dom.txt",
+      "sha256": "0b75e171da88448e202bdaf9dc48983cfae3fbedf950bf36d49e76f8ef848dcf",
+      "bytes": 3280
+    },
+    {
+      "path": "reports/platform-search-2026-10-26/second-platform-login.jpg",
+      "sha256": "190e0d6c7b710e6c18288252b9806adb63797532a574dc7f523b1ff9916642aa",
+      "bytes": 52974
+    }
+  ]
+}

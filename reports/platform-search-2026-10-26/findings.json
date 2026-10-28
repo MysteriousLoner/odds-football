@@ -1,0 +1,24 @@
+{
+  "capturedAt": "2026-10-26T09:47:20.478Z",
+  "completedSameMatchWebsiteComparison": false,
+  "candidates": [
+    {
+      "url": "https://w1.op25097op.shop/home",
+      "discoveredVia": "https://www.gffbd.com/",
+      "status": "Homepage accessible; opening IM sports requires sign-in. Login form has no visible guest access. Operator independence and underlying pricing supplier unverified."
+    },
+    {
+      "url": "https://2026610.shop/",
+      "status": "Connection timed out; no rates obtained."
+    },
+    {
+      "url": "https://dbi88.net/反波膽/",
+      "status": "Free-trial link returns the same promotional page; no match rates obtained."
+    },
+    {
+      "url": "https://zzaay.com/",
+      "status": "Supplier feature page; no public current rate board found."
+    }
+  ],
+  "baseline": "1CUF snapshots in odds-platform-audit-2026-10-26 and isports-comparison-2026-10-26. Existing API comparisons are not a second Chinese website quote."
+}

@@ -1,0 +1,3 @@
+# Preserve evidence byte-for-byte, including original CSV line endings and DOM spacing.
+reports/** -text -whitespace linguist-generated=true
+archive/*.tar.gz binary

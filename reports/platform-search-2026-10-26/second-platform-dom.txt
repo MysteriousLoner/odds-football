@@ -1,0 +1,89 @@
+- banner:
+  - link:
+    - /url: /home
+  - generic: 北京标准时间 2026-10-26 17:47:18
+  - generic: 󰅀
+  - button "注册":
+    - generic: 注册
+  - button "登入":
+    - generic: 登入
+  - link "忘记密码":
+    - /url: /forgetPwd
+    - generic: 忘记密码
+- main:
+  - link:
+    - /url: https://banner.0592tk.com/sub/2072/product/banner_text/RP3fdlQwiO61oQ0aEPwzj3LHc2xs53ouqkwLPB9S.jpg
+  - link:
+    - /url: https://banner.0592tk.com/sub/2072/product/banner_text/o7vytnFKcByzVKjFuYKSdjMi5XaM0GKK3KmkDiHX.png
+  - link:
+    - /url: https://banner.0592tk.com/sub/2072/product/banner_text/6laMX9CwIbuGGqKiM6yP9wn4eboCOgdeioRfeaAK.jpg
+  - link:
+    - /url: https://banner.0592tk.com/sub/2072/product/banner_text/DYZdMHPPXC8U0xdga4r4DiTxv6JsgPAJ7DBKwqK4.jpg
+  - link:
+    - /url: https://banner.0592tk.com/sub/2072/product/banner_text/IdMUrSH1LsrtApi3rsfHpI8bMwaEBHhNxTg8ScLl.jpg
+  - link:
+    - /url: https://banner.0592tk.com/sub/2072/product/banner_text/PYAUXsc7OhhAHX6zQ8y2MwKmfLcQjhOFugDfUbcq.jpg
+  - link:
+    - /url: https://banner.0592tk.com/sub/2072/product/banner_text/0zPknQvmxrjw90SANmIVz939xWQWWv1AZgVBGwt2.jpg
+  - link:
+    - /url: https://banner.0592tk.com/sub/2072/product/banner_text/AZfFrjK6uKuV2xcwbyqmGA9lVHUlhqXjUT3RJwcr.jpg
+  - link:
+    - /url: https://banner.0592tk.com/sub/2072/product/banner_text/hzas3tr1jWAoVoSsT0kL3m16aGMPiG65Hz5xxCg4.jpg
+  - link:
+    - /url: https://banner.0592tk.com/sub/2072/product/banner_text/WZj7RJbPEzeRWEC1ZHE78EPDGL1XbDuN2G9nTb63.jpg
+  - link:
+    - /url: https://banner.0592tk.com/sub/2072/product/banner_text/m1QO90b4iO7xtSBQHLHXkYby1daalNJ112DGNMFp.jpg
+  - link:
+    - /url: https://banner.0592tk.com/sub/2072/product/banner_text/RP3fdlQwiO61oQ0aEPwzj3LHc2xs53ouqkwLPB9S.jpg
+  - link:
+    - /url: https://banner.0592tk.com/sub/2072/product/banner_text/o7vytnFKcByzVKjFuYKSdjMi5XaM0GKK3KmkDiHX.png
+  - link:
+    - /url: https://banner.0592tk.com/sub/2072/product/banner_text/6laMX9CwIbuGGqKiM6yP9wn4eboCOgdeioRfeaAK.jpg
+  - link:
+    - /url: https://banner.0592tk.com/sub/2072/product/banner_text/DYZdMHPPXC8U0xdga4r4DiTxv6JsgPAJ7DBKwqK4.jpg
+  - generic: prev
+  - generic: next
+  - generic: 热门赛事
+  - generic: 体育
+  - generic: 沙巴体育
+  - generic: IM体育
+  - generic: 真人
+  - generic: WM真人
+  - generic: DB真人
+  - generic: Allbet真人
+  - generic: 棋牌
+  - generic: 开元棋牌
+  - generic: 美天棋牌
+  - generic: 乐游棋牌
+  - generic: 电子
+  - generic: PG电子
+  - generic: MG电子
+  - generic: JDB电子
+- button "智能客服":
+  - text: 智能客服
+- contentinfo:
+  - list:
+    - generic: 关于
+    - listitem: 相关网站
+  - list:
+    - generic: 其他
+    - listitem: 历年赛事统计
+    - listitem: 规则说明
+  - list:
+    - generic: 建议浏览器
+    - list:
+      - link:
+        - /url: https://www.google.com.tw/chrome/browser/desktop/index.html
+      - link:
+        - /url: http://windows.microsoft.com/zh-cn/internet-explorer/download-ie/
+      - link:
+        - /url: http://browser.qq.com/
+  - generic: APP下载
+  - list:
+    - link:
+      - /url: https://app2.sccmsdgmy.com/info/opeff/Android.html?lang=en-gb
+    - generic: Android
+    - link:
+      - /url: https://app2.sccmsdgmy.com/info/opeff/iOS.html?lang=en-gb
+    - generic: IOS
+- dialog

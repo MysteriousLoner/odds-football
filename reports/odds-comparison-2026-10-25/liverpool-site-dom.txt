@@ -1,0 +1,160 @@
+- generic: 
+- generic: 
+- generic: 1CUF
+- combobox:
+  - option "切换主题" [disabled]
+  - option "主题ey"
+  - option "主题fb1"
+  - option "主题fb2"
+  - option "主题fb3" [selected]
+  - option "主题fb4"
+  - option "主题fb5"
+  - option "主题fb6"
+  - option "主题fb7"
+  - option "主题fb8"
+  - option "主题fb9"
+  - option "主题fb10"
+  - option "主题fb11"
+  - option "主题fb31"
+  - option "主题fb32"
+  - option "主题fb41"
+  - option "主题fbwq"
+  - option "主题jr"
+  - option "主题jr1"
+  - option "主题jr2"
+  - option "主题ty"
+  - option "主题zf"
+- button "入金":  入金
+- button "出金":  出金
+- generic: 英格兰超级联赛
+- paragraph: 2026-10-25 22:00:00
+- paragraph:
+  - generic: 利物浦
+  - generic: Liverpool
+  - generic: VS
+  - generic: 布莱顿
+  - generic: Brighton
+- text: 销量
+- generic: 
+- generic: 178,239,724.16
+- generic: 可用余额
+- generic: 1,000.00
+- generic: 未结算
+- generic: "0"
+- generic: 未结算订单数
+- text:               
+- generic:  
+- generic:   
+- paragraph:
+  - text: 全场比分
+  - generic: "14"
+- table:
+  - rowgroup:
+    - row "主胜 平局 客胜":
+      - cell "主胜"
+      - cell "平局"
+      - cell "客胜"
+  - rowgroup:
+    - row "1-0 4.06% 0-0 2.77% 0-1 3.1%":
+      - cell "1-0 4.06%":
+        - generic: 1-0
+        - generic: 4.06%
+      - cell "0-0 2.77%":
+        - generic: 0-0
+        - generic: 2.77%
+      - cell "0-1 3.1%":
+        - generic: 0-1
+        - generic: 3.1%
+    - row "2-0 3.52% 1-1 6.6% 0-2 2.52%":
+      - cell "2-0 3.52%":
+        - generic: 2-0
+        - generic: 3.52%
+      - cell "1-1 6.6%":
+        - generic: 1-1
+        - generic: 6.6%
+      - cell "0-2 2.52%":
+        - generic: 0-2
+        - generic: 2.52%
+    - row "2-1 5.27% 2-2 4.4% 0-3 1.28%":
+      - cell "2-1 5.27%":
+        - generic: 2-1
+        - generic: 5.27%
+      - cell "2-2 4.4%":
+        - generic: 2-2
+        - generic: 4.4%
+      - cell "0-3 1.28%":
+        - generic: 0-3
+        - generic: 1.28%
+    - row "3-0 2.3% 3-3 1.1% 1-2 4.06%":
+      - cell "3-0 2.3%":
+        - generic: 3-0
+        - generic: 2.3%
+      - cell "3-3 1.1%":
+        - generic: 3-3
+        - generic: 1.1%
+      - cell "1-2 4.06%":
+        - generic: 1-2
+        - generic: 4.06%
+    - row "3-1 3.1% - 1-3 2.03%":
+      - cell "3-1 3.1%":
+        - generic: 3-1
+        - generic: 3.1%
+      - cell "-"
+      - cell "1-3 2.03%":
+        - generic: 1-3
+        - generic: 2.03%
+    - row "3-2 2.52% - 2-3 2.03%":
+      - cell "3-2 2.52%":
+        - generic: 3-2
+        - generic: 2.52%
+      - cell "-"
+      - cell "2-3 2.03%":
+        - generic: 2-3
+        - generic: 2.03%
+- paragraph: 半场比分
+- table:
+  - rowgroup:
+    - row "主胜 平局 客胜":
+      - cell "主胜"
+      - cell "平局"
+      - cell "客胜"
+  - rowgroup:
+    - row "1-0 11.73% 0-0 14.08% 0-1 9.6%":
+      - cell "1-0 11.73%":
+        - generic: 1-0
+        - generic: 11.73%
+      - cell "0-0 14.08%":
+        - generic: 0-0
+        - generic: 14.08%
+      - cell "0-1 9.6%":
+        - generic: 0-1
+        - generic: 9.6%
+    - row "2-0 5.27% 1-1 7.54% 0-2 3.1%":
+      - cell "2-0 5.27%":
+        - generic: 2-0
+        - generic: 5.27%
+      - cell "1-1 7.54%":
+        - generic: 1-1
+        - generic: 7.54%
+      - cell "0-2 3.1%":
+        - generic: 0-2
+        - generic: 3.1%
+    - row "2-1 3.52% 2-2 0.43% 1-2 2.77%":
+      - cell "2-1 3.52%":
+        - generic: 2-1
+        - generic: 3.52%
+      - cell "2-2 0.43%":
+        - generic: 2-2
+        - generic: 0.43%
+      - cell "1-2 2.77%":
+        - generic: 1-2
+        - generic: 2.77%
+- text:    
+- generic: 
+- text: 首页
+- generic: 
+- button "交易"
+- generic: 
+- text: 报表
+- generic: 
+- text: 账户

@@ -25,3 +25,9 @@ coverage
 *.tsbuildinfo
 npm-debug.log*
 .DS_Store
+
+# Historical evidence and handoff files are available in Git, not needed by the app image.
+reports
+archive
+docs
+scripts/research

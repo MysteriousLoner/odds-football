@@ -1,0 +1,506 @@
+[
+  {
+    "eventId": "36225095",
+    "capturedAt": "2026-10-26T08:30:25.129Z",
+    "header": "- paragraph: 2026-10-26 20:00:00\n- paragraph:\n  - generic: 泗水\n  - generic: Persebaya Surabaya\n  - generic: VS\n  - generic: 马都拉联\n  - generic: Madura United\n",
+    "rows": [
+      {
+        "score": "1-0",
+        "sitePercent": 6.21
+      },
+      {
+        "score": "0-0",
+        "sitePercent": 3.52
+      },
+      {
+        "score": "0-1",
+        "sitePercent": 2.77
+      },
+      {
+        "score": "2-0",
+        "sitePercent": 6.6
+      },
+      {
+        "score": "1-1",
+        "sitePercent": 5.87
+      },
+      {
+        "score": "0-2",
+        "sitePercent": 1.82
+      },
+      {
+        "score": "2-1",
+        "sitePercent": 5.56
+      },
+      {
+        "score": "2-2",
+        "sitePercent": 3.1
+      },
+      {
+        "score": "0-3",
+        "sitePercent": 1.03
+      },
+      {
+        "score": "3-0",
+        "sitePercent": 4.8
+      },
+      {
+        "score": "3-3",
+        "sitePercent": 1.03
+      },
+      {
+        "score": "1-2",
+        "sitePercent": 2.77
+      },
+      {
+        "score": "3-1",
+        "sitePercent": 4.06
+      },
+      {
+        "score": "1-3",
+        "sitePercent": 1.28
+      },
+      {
+        "score": "3-2",
+        "sitePercent": 2.03
+      },
+      {
+        "score": "2-3",
+        "sitePercent": 1.28
+      }
+    ],
+    "url": "https://fb3.1cuf.com/#/Trade"
+  },
+  {
+    "eventId": "36237959",
+    "capturedAt": "2026-10-26T08:30:39.017Z",
+    "header": "- paragraph: 2026-10-26 20:00:00\n- paragraph:\n  - generic: 蒙通联\n  - generic: Muang Thong United\n  - generic: VS\n  - generic: 警察特罗\n  - generic: Police Tero FC\n",
+    "rows": [
+      {
+        "score": "1-0",
+        "sitePercent": 7.04
+      },
+      {
+        "score": "0-0",
+        "sitePercent": 4.8
+      },
+      {
+        "score": "0-1",
+        "sitePercent": 4.06
+      },
+      {
+        "score": "2-0",
+        "sitePercent": 6.6
+      },
+      {
+        "score": "1-1",
+        "sitePercent": 6.6
+      },
+      {
+        "score": "0-2",
+        "sitePercent": 2.3
+      },
+      {
+        "score": "2-1",
+        "sitePercent": 5.56
+      },
+      {
+        "score": "2-2",
+        "sitePercent": 2.77
+      },
+      {
+        "score": "0-3",
+        "sitePercent": 1.28
+      },
+      {
+        "score": "3-0",
+        "sitePercent": 4.4
+      },
+      {
+        "score": "3-3",
+        "sitePercent": 1.03
+      },
+      {
+        "score": "1-2",
+        "sitePercent": 3.1
+      },
+      {
+        "score": "3-1",
+        "sitePercent": 3.52
+      },
+      {
+        "score": "1-3",
+        "sitePercent": 1.28
+      },
+      {
+        "score": "3-2",
+        "sitePercent": 1.82
+      },
+      {
+        "score": "2-3",
+        "sitePercent": 1.28
+      }
+    ],
+    "url": "https://fb3.1cuf.com/#/Trade"
+  },
+  {
+    "eventId": "36239760",
+    "capturedAt": "2026-10-26T08:30:39.519Z",
+    "header": "- paragraph: 2026-10-26 19:30:00\n- paragraph:\n  - generic: 加拉塔萨雷 U19\n  - generic: Galatasaray U19\n  - generic: VS\n  - generic: 费内巴切 U19\n  - generic: Fenerbahce U19\n",
+    "rows": [
+      {
+        "score": "1-0",
+        "sitePercent": 4.8
+      },
+      {
+        "score": "0-0",
+        "sitePercent": 2.52
+      },
+      {
+        "score": "0-1",
+        "sitePercent": 2.77
+      },
+      {
+        "score": "2-0",
+        "sitePercent": 4.8
+      },
+      {
+        "score": "1-1",
+        "sitePercent": 5.56
+      },
+      {
+        "score": "0-2",
+        "sitePercent": 2.03
+      },
+      {
+        "score": "2-1",
+        "sitePercent": 5.27
+      },
+      {
+        "score": "2-2",
+        "sitePercent": 3.52
+      },
+      {
+        "score": "0-3",
+        "sitePercent": 1.28
+      },
+      {
+        "score": "3-0",
+        "sitePercent": 4.06
+      },
+      {
+        "score": "3-3",
+        "sitePercent": 1.1
+      },
+      {
+        "score": "1-2",
+        "sitePercent": 3.52
+      },
+      {
+        "score": "3-1",
+        "sitePercent": 4.06
+      },
+      {
+        "score": "1-3",
+        "sitePercent": 1.82
+      },
+      {
+        "score": "3-2",
+        "sitePercent": 2.52
+      },
+      {
+        "score": "2-3",
+        "sitePercent": 1.82
+      }
+    ],
+    "url": "https://fb3.1cuf.com/#/Trade"
+  },
+  {
+    "eventId": "36239988",
+    "capturedAt": "2026-10-26T08:30:39.925Z",
+    "header": "- paragraph: 2026-10-26 18:00:00\n- paragraph:\n  - generic: 猎鹰\n  - generic: FC Lochin\n  - generic: VS\n  - generic: 费尔干纳|州立大学\n  - generic: Fardu Ferghana\n",
+    "rows": [
+      {
+        "score": "1-0",
+        "sitePercent": 4.8
+      },
+      {
+        "score": "0-0",
+        "sitePercent": 2.52
+      },
+      {
+        "score": "0-1",
+        "sitePercent": 2.77
+      },
+      {
+        "score": "2-0",
+        "sitePercent": 4.8
+      },
+      {
+        "score": "1-1",
+        "sitePercent": 5.56
+      },
+      {
+        "score": "0-2",
+        "sitePercent": 2.03
+      },
+      {
+        "score": "2-1",
+        "sitePercent": 5.27
+      },
+      {
+        "score": "2-2",
+        "sitePercent": 3.52
+      },
+      {
+        "score": "0-3",
+        "sitePercent": 1.28
+      },
+      {
+        "score": "3-0",
+        "sitePercent": 4.06
+      },
+      {
+        "score": "3-3",
+        "sitePercent": 1.1
+      },
+      {
+        "score": "1-2",
+        "sitePercent": 3.52
+      },
+      {
+        "score": "3-1",
+        "sitePercent": 4.06
+      },
+      {
+        "score": "1-3",
+        "sitePercent": 1.82
+      },
+      {
+        "score": "3-2",
+        "sitePercent": 2.52
+      },
+      {
+        "score": "2-3",
+        "sitePercent": 1.82
+      }
+    ],
+    "url": "https://fb3.1cuf.com/#/Trade"
+  },
+  {
+    "eventId": "36239995",
+    "capturedAt": "2026-10-26T08:30:41.682Z",
+    "header": "- paragraph: 2026-10-26 20:00:00\n- paragraph:\n  - generic: 比克波德|冶金\n  - generic: Metallurg Bekabad\n  - generic: VS\n  - generic: 加扎尔肯特\n  - generic: Gazalkent\n",
+    "rows": [
+      {
+        "score": "1-0",
+        "sitePercent": 4.8
+      },
+      {
+        "score": "0-0",
+        "sitePercent": 2.52
+      },
+      {
+        "score": "0-1",
+        "sitePercent": 2.77
+      },
+      {
+        "score": "2-0",
+        "sitePercent": 4.8
+      },
+      {
+        "score": "1-1",
+        "sitePercent": 5.56
+      },
+      {
+        "score": "0-2",
+        "sitePercent": 2.03
+      },
+      {
+        "score": "2-1",
+        "sitePercent": 5.27
+      },
+      {
+        "score": "2-2",
+        "sitePercent": 3.52
+      },
+      {
+        "score": "0-3",
+        "sitePercent": 1.28
+      },
+      {
+        "score": "3-0",
+        "sitePercent": 4.06
+      },
+      {
+        "score": "3-3",
+        "sitePercent": 1.1
+      },
+      {
+        "score": "1-2",
+        "sitePercent": 3.52
+      },
+      {
+        "score": "3-1",
+        "sitePercent": 4.06
+      },
+      {
+        "score": "1-3",
+        "sitePercent": 1.82
+      },
+      {
+        "score": "3-2",
+        "sitePercent": 2.52
+      },
+      {
+        "score": "2-3",
+        "sitePercent": 1.82
+      }
+    ],
+    "url": "https://fb3.1cuf.com/#/Trade"
+  },
+  {
+    "eventId": "36240219",
+    "capturedAt": "2026-10-26T08:30:42.165Z",
+    "header": "- paragraph: 2026-10-26 20:00:00\n- paragraph:\n  - generic: 讷格莱阿斯\n  - generic: Negelle Arsi\n  - generic: VS\n  - generic: 阿达玛城\n  - generic: Adama City\n",
+    "rows": [
+      {
+        "score": "1-0",
+        "sitePercent": 4.06
+      },
+      {
+        "score": "0-0",
+        "sitePercent": 2.77
+      },
+      {
+        "score": "0-1",
+        "sitePercent": 3.1
+      },
+      {
+        "score": "2-0",
+        "sitePercent": 4.06
+      },
+      {
+        "score": "1-1",
+        "sitePercent": 6.21
+      },
+      {
+        "score": "0-2",
+        "sitePercent": 2.52
+      },
+      {
+        "score": "2-1",
+        "sitePercent": 5.27
+      },
+      {
+        "score": "2-2",
+        "sitePercent": 4.4
+      },
+      {
+        "score": "0-3",
+        "sitePercent": 1.55
+      },
+      {
+        "score": "3-0",
+        "sitePercent": 2.77
+      },
+      {
+        "score": "3-3",
+        "sitePercent": 1.1
+      },
+      {
+        "score": "1-2",
+        "sitePercent": 4.06
+      },
+      {
+        "score": "3-1",
+        "sitePercent": 3.52
+      },
+      {
+        "score": "1-3",
+        "sitePercent": 2.52
+      },
+      {
+        "score": "3-2",
+        "sitePercent": 2.52
+      },
+      {
+        "score": "2-3",
+        "sitePercent": 2.03
+      }
+    ],
+    "url": "https://fb3.1cuf.com/#/Trade"
+  },
+  {
+    "eventId": "36184231",
+    "capturedAt": "2026-10-26T08:32:29.219Z",
+    "header": "- paragraph: 2026-10-26 23:00:00\n- paragraph:\n  - generic: 普洛夫迪夫|火车头\n  - generic: Lokomotiv Plovdiv\n  - generic: VS\n  - generic: 索非亚|斯拉夫\n  - generic: Slavia Sofia\n",
+    "rows": [
+      {
+        "score": "1-0",
+        "sitePercent": 8.79
+      },
+      {
+        "score": "0-0",
+        "sitePercent": 8.79
+      },
+      {
+        "score": "0-1",
+        "sitePercent": 7.04
+      },
+      {
+        "score": "2-0",
+        "sitePercent": 5.27
+      },
+      {
+        "score": "1-1",
+        "sitePercent": 8.79
+      },
+      {
+        "score": "0-2",
+        "sitePercent": 3.52
+      },
+      {
+        "score": "2-1",
+        "sitePercent": 5.27
+      },
+      {
+        "score": "2-2",
+        "sitePercent": 2.77
+      },
+      {
+        "score": "0-3",
+        "sitePercent": 1.55
+      },
+      {
+        "score": "3-0",
+        "sitePercent": 2.3
+      },
+      {
+        "score": "3-3",
+        "sitePercent": 0.79
+      },
+      {
+        "score": "1-2",
+        "sitePercent": 4.06
+      },
+      {
+        "score": "3-1",
+        "sitePercent": 2.3
+      },
+      {
+        "score": "1-3",
+        "sitePercent": 1.55
+      },
+      {
+        "score": "3-2",
+        "sitePercent": 1.28
+      },
+      {
+        "score": "2-3",
+        "sitePercent": 1.28
+      }
+    ],
+    "url": "https://fb3.1cuf.com/#/Trade"
+  }
+]
