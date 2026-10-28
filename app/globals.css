@@ -16,3 +16,8 @@
 .comparison-layout{grid-template-columns:200px minmax(0,1fr)}.comparison-layout>.betslip{display:none}@media(max-width:800px){.comparison-layout{grid-template-columns:minmax(0,1fr)}}
 
 @media(max-width:620px){.comparison-table{min-width:0;table-layout:fixed}.comparison-table th,.comparison-table td{padding:12px 7px}.comparison-table thead th{font-size:11px}.comparison-table th:first-child{width:14%}.comparison-table th:nth-child(2){width:29%}.comparison-table th:nth-child(3){width:32%}.comparison-table th:nth-child(4){width:25%}.comparison-table td strong{font-size:14px}.comparison-table small{font-size:10px;overflow-wrap:anywhere}.comparison-table tbody th{font-size:15px}}
+
+/* The three remainder outcomes span a row so their full meaning stays readable. */
+.score-button.grouped-outcome{grid-column:1/-1;flex-direction:row;justify-content:space-between;padding:10px 12px;min-height:44px;gap:12px}.score-button.grouped-outcome>span{font-size:11px;text-align:left}.excluded>b{overflow-wrap:anywhere}.comparison-table th[scope="row"]{overflow-wrap:anywhere}
+
+.score-grid{grid-template-columns:repeat(4,minmax(0,1fr));max-height:none;overflow:visible}.match-body{align-items:start}

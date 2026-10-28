@@ -61,7 +61,7 @@ The GitHub Actions workflow builds the container, runs the accounting tests duri
 
 Reference: https://betfair-odds.com/docs
 
-The server endpoint `/api/markets` reads the live and prematch soccer feeds using the `x-portal-apikey` header. It filters events labeled Premier League and keeps priced numeric `CORRECT_SCORE` lay selections. Market ID, runner ID, and handicap identify each selection. Provider fixture and competition labels are not independently verified.
+The server endpoint `/api/markets` reads the live and prematch soccer feeds using the `x-portal-apikey` header. It filters events labeled Premier League and supports all 19 standard `CORRECT_SCORE` outcomes: 16 exact scores (0–0 through 3–3), Any Other Home Win, Any Other Away Win and Any Other Draw. Only selections with positive available lay size and valid lay odds can be selected. Market ID, runner ID, and handicap identify each selection. Provider fixture and competition labels are not independently verified.
 
 `BETFAIR_ODDS_API_KEY` is read at runtime from the server environment. It is never sent to the browser. The original hosted Site's secret is managed separately and is not exported into this checkout.
 
@@ -69,7 +69,7 @@ Prices refresh manually. A 30-second server cache limits duplicate provider call
 
 ## Credit model and settlement
 
-The amount entered is **maximum loss / liability**, not exchange lay stake. Profit = liability / (lay odds − 1), rounded down to two decimals. Placement reserves liability. A different final score returns liability plus profit; a matching score loses the liability. No demo commission.
+The amount entered is **maximum loss / liability**, not exchange lay stake. Profit = liability / (lay odds − 1), rounded down to two decimals. Placement reserves liability. A final score outside the excluded outcome returns liability plus profit; a score in that outcome loses the liability. Any Other Home/Away Win covers the corresponding winner scoring 4+ goals, and Any Other Draw covers 4–4 and higher draws. No demo commission.
 
 **My bets → Simulate result** applies one chosen demo score to all open tickets on a match, once. Settled matches cannot accept further bets. Settlement is simulated even with API-sourced prices: no official result verification is implemented. Provider liquidity is informational; no orders are matched on an exchange.
 
@@ -89,6 +89,6 @@ Start with [docs/CODEX_HANDOFF.md](docs/CODEX_HANDOFF.md). All historical resear
 
 Set `ISPORTS_API_KEY` in ignored `.env` and recreate the container. Open **Compare rates → Load / refresh both sources**. This manually fetches the Betfair-derived app prices and iSports English Premier League schedule / correct-score quotes. iSports responses are cached for 60 seconds per server process; failed refresh attempts also have a 60-second cooldown. The schedule and required prematch/in-play feeds use up to three iSports requests.
 
-Fixtures pair only when canonical home/away names, exact UTC kickoff and prematch/in-play phase match uniquely. Demo fixtures never pair with real data. Every numeric score available from either source is shown; missing or closed quotes remain unavailable. Bookmaker, source capture time, last price-change time and snapshot expiry are visible. An expired comparison is a historical snapshot.
+Fixtures pair only when canonical home/away names, exact UTC kickoff and prematch/in-play phase match uniquely. Demo fixtures never pair with real data. All 19 standard outcomes and every additional numeric score available from either source are shown; missing or closed quotes remain unavailable. Bookmaker, source capture time, last price-change time and snapshot expiry are visible. An expired comparison is a historical snapshot.
 
 iSports quotes net **back** odds, not lay odds. Its comparison return is hypothetical: `100 / netBackOdds`, assuming a lay could be offered at `netBackOdds + 1` decimal. The gap is iSports minus Terrace in percentage points. iSports rows cannot be placed as credit bets and no payout multiplier was added.
