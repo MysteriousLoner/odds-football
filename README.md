@@ -104,4 +104,4 @@ docker compose -p terrace down
 
 Local address: http://localhost:3000. The existing ngrok agent forwards to http://127.0.0.1:3000. Its public URL is available from http://localhost:4040/api/tunnels. Keep Docker Desktop, the Mac and ngrok running for colleagues to connect. First-time visitors may need to click ngrok's Visit Site button. If the agent has stopped, run `ngrok http http://127.0.0.1:3000 --host-header=rewrite`.
 
-Both provider keys are configured in the ignored local `.env` file. The app opens in simulated mode; use Connect live odds or Compare rates to fetch provider data. Each browser has its own play-credit wallet. The old Sites deployment is being retired separately; do not republish it when updating this local deployment.
+Both provider keys are configured in the ignored local `.env` file. The app opens in simulated mode; use Connect live odds or Compare rates to fetch provider data. Each browser has its own play-credit wallet. The old Sites app has been disabled with an HTTP 410 retirement response and its API secrets removed; do not republish it when updating this local deployment.
