@@ -11,7 +11,7 @@ export async function GET() {
   pending=(async()=>{
     try {
       const feeds=await Promise.all(['live','prematch'].map(async feed=>{
-        const response=await fetch(`https://betfair-odds.com/betfair/v1/livemap?feed=${feed}&sports=soccer`,{headers:{'x-portal-apikey':key},signal:AbortSignal.timeout(15000)});
+        const response=await fetch(`https://betfair-odds.com/betfair/v1/livemap?feed=${feed}&sports=soccer`,{headers:{'x-portal-apikey':key,'User-Agent':'Terrace-Comparison/1.0',Accept:'application/json'},signal:AbortSignal.timeout(15000)});
         if(!response.ok){
           const detail=response.status===401?'The odds API key was rejected.':response.status===403?'The API plan does not allow this feed.':response.status===429?'The API request limit was reached. Wait before refreshing.':'The odds provider is temporarily unavailable.';
           throw new Error(detail);

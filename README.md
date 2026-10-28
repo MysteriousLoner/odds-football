@@ -84,3 +84,11 @@ Barlow Condensed and DM Sans are served locally from Google Fonts. Club badges a
 ## Colleague / Codex handoff and research archive
 
 Start with [docs/CODEX_HANDOFF.md](docs/CODEX_HANDOFF.md). All historical research is under [reports/](reports/index.html). With Node installed, `npm run reports` opens a local report server at http://127.0.0.1:8081; it makes no provider requests. The original Sites source is preserved in `archive/terrace-sites-source.tar.gz`. API keys must be shared privately and are excluded from the repository.
+
+## Compare iSports rates
+
+Set `ISPORTS_API_KEY` in ignored `.env` and recreate the container. Open **Compare rates → Load / refresh both sources**. This manually fetches the Betfair-derived app prices and iSports English Premier League schedule / correct-score quotes. iSports responses are cached for 60 seconds per server process; failed refresh attempts also have a 60-second cooldown. The schedule and required prematch/in-play feeds use up to three iSports requests.
+
+Fixtures pair only when canonical home/away names, exact UTC kickoff and prematch/in-play phase match uniquely. Demo fixtures never pair with real data. Every numeric score available from either source is shown; missing or closed quotes remain unavailable. Bookmaker, source capture time, last price-change time and snapshot expiry are visible. An expired comparison is a historical snapshot.
+
+iSports quotes net **back** odds, not lay odds. Its comparison return is hypothetical: `100 / netBackOdds`, assuming a lay could be offered at `netBackOdds + 1` decimal. The gap is iSports minus Terrace in percentage points. iSports rows cannot be placed as credit bets and no payout multiplier was added.

@@ -8,6 +8,7 @@ services:
       - "127.0.0.1:${PORT:-3000}:3000"
     environment:
       BETFAIR_ODDS_API_KEY: ${BETFAIR_ODDS_API_KEY:-}
+      ISPORTS_API_KEY: ${ISPORTS_API_KEY:-}
     restart: unless-stopped
     init: true
     read_only: true

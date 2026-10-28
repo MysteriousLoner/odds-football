@@ -11,7 +11,7 @@ Open this repository as a project in Codex. Read `AGENTS.md` and `README.md` fir
 - Clone `https://github.com/MysteriousLoner/odds-football.git` using your own GitHub account with read access. The owner must grant you access if cloning fails. Do not use the owner's GitHub token or password.
 - Local demo: no username, password, database, Cloudflare or ChatGPT Sites credentials required. Play-credit wallets and tickets are stored in each browser's localStorage.
 - Optional API-powered odds: set `BETFAIR_ODDS_API_KEY` in the ignored `.env` file. Obtain the shared key privately from the owner or use your own active subscription/key. The key is absent from Git and images.
-- Optional iSports research: `ISPORTS_API_KEY` is an analysis credential only. iSports is not wired into the app. The owner can supply this key privately. The historical reports already contain their data and work without either key.
+- Optional iSports comparison: `ISPORTS_API_KEY` powers the server-only Compare rates view. Set it in .env and recreate the container. The owner can supply this key privately. The historical reports already contain their data and work without either key.
 - 1CUF and other betting-site logins are not needed to run the app or view the reports. No such login credentials are included.
 - Keys used for the 26 October research may have expired, hit quotas, or lack current feed permissions. Check provider responses rather than treating missing fixtures as an app failure.
 
