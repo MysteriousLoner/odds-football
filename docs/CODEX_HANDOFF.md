@@ -2,7 +2,7 @@
 
 ## Start here
 
-This is a play-credit Premier League reverse correct-score (反波胆) demo. There are no payments, exchange orders, prizes or production accounts. The app reserves maximum liability and computes gross profit as `risk / (decimal lay odds - 1)`, rounded down to two decimals. No 50% payout multiplier was applied.
+This is a play-credit Premier League reverse correct-score (反波胆) demo. There are no payments, exchange orders, prizes or production accounts. The app reserves maximum liability and computes gross profit as `risk / (decimal lay odds - 1)`, rounded down to two decimals. New tickets deduct a 5% platform fee from winning profit; losing bets and returned risk incur no fee. Stored ticket profit is net, with gross profit and fee recorded separately. Existing tickets retain their original payouts. Rates display `95 / (layOdds - 1)` percent. No 50% payout multiplier was applied.
 
 Open this repository as a project in Codex. Read `AGENTS.md` and `README.md` first. Use the Docker/standard Next.js workflow below for a local checkout; `npm run dev` is the original Sites/Vinext workflow.
 

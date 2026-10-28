@@ -1,10 +1,20 @@
 export type Selection = { score: string; odds: number; size: number; marketId: string; runnerId: number; handicap: number };
 export type Match = { id: string; a: string; b: string; time: string; live: boolean; minute?: number; current?: string; formA?: string; formB?: string; selections: Selection[]; source: 'demo' | 'api'; kickoff?: string };
-export type Ticket = { id: string; eventId: string; a: string; b: string; score: string; odds: number; risk: number; profit: number; created: string; source: 'demo' | 'api'; status: 'open' | 'won' | 'lost'; final?: string; marketId: string; runnerId: number; handicap: number };
+export type Ticket = { id: string; eventId: string; a: string; b: string; score: string; odds: number; risk: number; profit: number; grossProfit?: number; platformFee?: number; feeRate?: number; created: string; source: 'demo' | 'api'; status: 'open' | 'won' | 'lost'; final?: string; marketId: string; runnerId: number; handicap: number };
 export type Account = { balance: number; tickets: Ticket[]; results: Record<string,string>; topups: number };
 export const freshAccount = (): Account => ({ balance: 10000, tickets: [], results: {}, topups: 0 });
 export const round = (n: number) => Math.round((n + Number.EPSILON) * 100) / 100;
 export const profitFor = (risk: number, odds: number) => Number.isFinite(risk) && Number.isFinite(odds) && risk > 0 && odds > 1 ? Math.floor((risk / (odds - 1) + Number.EPSILON) * 100) / 100 : 0;
+export const PLATFORM_FEE_RATE = 0.05;
+// Gross profit keeps the existing round-down policy. Fee rounds to the nearest cent;
+// net profit is the remaining cents. Risk is never part of the fee basis.
+export function payoutFor(risk:number,odds:number) {
+  const grossProfit=profitFor(risk,odds);
+  const grossCents=Math.round(grossProfit*100);
+  const feeCents=Math.round(grossCents*PLATFORM_FEE_RATE);
+  return {grossProfit,platformFee:feeCents/100,profit:(grossCents-feeCents)/100,feeRate:PLATFORM_FEE_RATE};
+}
+export const netReturnPercent = (odds:number) => Number.isFinite(odds)&&odds>1 ? 100*(1-PLATFORM_FEE_RATE)/(odds-1) : 0;
 // Standard 19-runner correct-score market: a 4×4 exact-score grid plus three remainders.
 export const CORRECT_SCORE_OUTCOMES = [
   ...Array.from({length:4},(_,home)=>Array.from({length:4},(_,away)=>`${home}–${away}`)).flat(),
@@ -71,9 +81,10 @@ export function placeTicket(account:Account, match:Match, selection:Selection, r
   if(risk>account.balance) throw new Error('Not enough credits. Reduce your risk or refill your demo wallet.');
   if(account.results[match.id]) throw new Error('This demo match has already settled. Choose another match.');
   if(!match.selections.some(s=>s.marketId===selection.marketId && s.runnerId===selection.runnerId && s.handicap===selection.handicap && s.odds===selection.odds)) throw new Error('The price changed. Select your score again.');
-  const profit=profitFor(risk,selection.odds);
+  const payout=payoutFor(risk,selection.odds);
+  const {profit}=payout;
   if(profit < .01) throw new Error('This risk is too small for the selected price. Increase it to earn at least 0.01 credits.');
-  const ticket:Ticket={id:crypto.randomUUID(),eventId:match.id,a:match.a,b:match.b,score:selection.score,odds:selection.odds,risk,profit,created:new Date().toISOString(),source:match.source,status:'open',marketId:selection.marketId,runnerId:selection.runnerId,handicap:selection.handicap};
+  const ticket:Ticket={id:crypto.randomUUID(),eventId:match.id,a:match.a,b:match.b,score:selection.score,odds:selection.odds,risk,...payout,created:new Date().toISOString(),source:match.source,status:'open',marketId:selection.marketId,runnerId:selection.runnerId,handicap:selection.handicap};
   return {...account,balance:round(account.balance-risk),tickets:[ticket,...account.tickets]};
 }
 export function settleMatch(account:Account,eventId:string,final:string): Account {

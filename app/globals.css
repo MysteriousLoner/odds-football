@@ -21,3 +21,5 @@
 .score-button.grouped-outcome{grid-column:1/-1;flex-direction:row;justify-content:space-between;padding:10px 12px;min-height:44px;gap:12px}.score-button.grouped-outcome>span{font-size:11px;text-align:left}.excluded>b{overflow-wrap:anywhere}.comparison-table th[scope="row"]{overflow-wrap:anywhere}
 
 .score-grid{grid-template-columns:repeat(4,minmax(0,1fr));max-height:none;overflow:visible}.match-body{align-items:start}
+
+.ticket-fee{display:block;color:var(--muted);font-size:10px;margin-top:5px}.score-caption>span:last-child{max-width:50%}
