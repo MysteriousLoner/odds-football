@@ -1,5 +1,7 @@
 # Working in this repository
 
+User deployment preference (28 October 2026): run locally with Docker Compose and share through ngrok. The previous Sites app is retired. Do not publish or redeploy the app to Sites unless the user explicitly asks to restore hosted service.
+
 Read `docs/CODEX_HANDOFF.md` and `README.md` before starting. Run the root app with Docker Compose or `npm run dev:docker` (standard Next.js). `npm run dev` is the original Sites/Vinext path. Reports are static historical evidence; serve them with `npm run reports`.
 
 Never commit real environment files or credentials. No API key is needed for simulated mode. `BETFAIR_ODDS_API_KEY` is server-only; `ISPORTS_API_KEY` powers optional side-by-side correct-score comparisons. Do not replace source odds or apply an undocumented multiplier. Preserve the distinction between offered lay prices and hypothetical conversions from back odds.

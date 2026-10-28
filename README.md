@@ -92,3 +92,16 @@ Set `ISPORTS_API_KEY` in ignored `.env` and recreate the container. Open **Compa
 Fixtures pair only when canonical home/away names, exact UTC kickoff and prematch/in-play phase match uniquely. Demo fixtures never pair with real data. All 19 standard outcomes and every additional numeric score available from either source are shown; missing or closed quotes remain unavailable. Bookmaker, source capture time, last price-change time and snapshot expiry are visible. An expired comparison is a historical snapshot.
 
 iSports quotes net **back** odds, not lay odds. Its comparison return is hypothetical: `100 / netBackOdds`, assuming a lay could be offered at `netBackOdds + 1` decimal. Terrace now displays net returns after its 5% platform fee, while the iSports hypothetical reference is explicitly before fees. The gap is iSports gross minus Terrace net in percentage points. Historical reports remain unchanged. iSports rows cannot be placed as credit bets and no payout multiplier was added.
+
+## Current local deployment (28 October 2026)
+
+The active Docker checkout is this directory. Start or stop its container with:
+
+```sh
+docker compose -p terrace up --build -d
+docker compose -p terrace down
+```
+
+Local address: http://localhost:3000. The existing ngrok agent forwards to http://127.0.0.1:3000. Its public URL is available from http://localhost:4040/api/tunnels. Keep Docker Desktop, the Mac and ngrok running for colleagues to connect. First-time visitors may need to click ngrok's Visit Site button. If the agent has stopped, run `ngrok http http://127.0.0.1:3000 --host-header=rewrite`.
+
+Both provider keys are configured in the ignored local `.env` file. The app opens in simulated mode; use Connect live odds or Compare rates to fetch provider data. Each browser has its own play-credit wallet. The old Sites deployment is being retired separately; do not republish it when updating this local deployment.
