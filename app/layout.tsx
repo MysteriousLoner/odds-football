@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Terrace — Premier League 反波胆",
-  description: "The other side of the score. Explore Premier League reverse correct-score markets with play credits.",
+  title: "Terrace — Football 反波胆",
+  description: "The other side of the score. Explore football league and cup reverse correct-score markets with play credits.",
   icons: {
     icon: "/favicon.svg",
     shortcut: "/favicon.svg",

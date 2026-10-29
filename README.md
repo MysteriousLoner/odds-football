@@ -1,4 +1,4 @@
-# Terrace — Premier League 反波胆 demo
+# Terrace — Football 反波胆 demo
 
 A responsive reverse correct-score sportsbook with 10,000 starting play credits, risk-based bet slips, credit refills, history, watchlist, team search, and simulated settlement. No deposits, payments, prizes, or exchange order execution.
 
@@ -61,7 +61,7 @@ The GitHub Actions workflow builds the container, runs the accounting tests duri
 
 Reference: https://betfair-odds.com/docs
 
-The server endpoint `/api/markets` reads the live and prematch soccer feeds using the `x-portal-apikey` header. It filters events labeled Premier League and supports all 19 standard `CORRECT_SCORE` outcomes: 16 exact scores (0–0 through 3–3), Any Other Home Win, Any Other Away Win and Any Other Draw. Only selections with positive available lay size and valid lay odds can be selected. Market ID, runner ID, and handicap identify each selection. Provider fixture and competition labels are not independently verified.
+The server endpoint `/api/markets` reads the live and prematch soccer feeds using the `x-portal-apikey` header. It includes football leagues and cups, sorts by exact kickoff, and supports all 19 standard `CORRECT_SCORE` outcomes: 16 exact scores (0–0 through 3–3), Any Other Home Win, Any Other Away Win and Any Other Draw. Only selections with positive available lay size and valid lay odds can be selected. Market ID, runner ID, and handicap identify each selection. Provider fixture and competition labels are not independently verified.
 
 `BETFAIR_ODDS_API_KEY` is read at runtime from the server environment. It is never sent to the browser. The original hosted Site's secret is managed separately and is not exported into this checkout.
 
@@ -87,7 +87,7 @@ Start with [docs/CODEX_HANDOFF.md](docs/CODEX_HANDOFF.md). All historical resear
 
 ## Compare iSports rates
 
-Set `ISPORTS_API_KEY` in ignored `.env` and recreate the container. Open **Compare rates → Load / refresh both sources**. This manually fetches the Betfair-derived app prices and iSports English Premier League schedule / correct-score quotes. iSports responses are cached for 60 seconds per server process; failed refresh attempts also have a 60-second cooldown. The schedule and required prematch/in-play feeds use up to three iSports requests.
+Set `ISPORTS_API_KEY` in ignored `.env` and recreate the container. Open **Compare rates → Load / refresh both sources**. This manually fetches the Betfair-derived app prices and iSports daily football schedule / correct-score quotes. iSports responses are cached for 60 seconds per server process; failed refresh attempts also have a 60-second cooldown. The schedule and required prematch/in-play feeds use up to three iSports requests.
 
 Fixtures pair only when canonical home/away names, exact UTC kickoff and prematch/in-play phase match uniquely. Demo fixtures never pair with real data. All 19 standard outcomes and every additional numeric score available from either source are shown; missing or closed quotes remain unavailable. Bookmaker, source capture time, last price-change time and snapshot expiry are visible. An expired comparison is a historical snapshot.
 
@@ -105,3 +105,9 @@ docker compose -p terrace down
 Local address: http://localhost:3000. The existing ngrok agent forwards to http://127.0.0.1:3000. Its public URL is available from http://localhost:4040/api/tunnels. Keep Docker Desktop, the Mac and ngrok running for colleagues to connect. First-time visitors may need to click ngrok's Visit Site button. If the agent has stopped, run `ngrok http http://127.0.0.1:3000 --host-header=rewrite`.
 
 Both provider keys are configured in the ignored local `.env` file. The app opens in simulated mode; use Connect live odds or Compare rates to fetch provider data. Each browser has its own play-credit wallet. The old Sites app has been disabled with an HTTP 410 retirement response and its API secrets removed; do not republish it when updating this local deployment.
+
+## Match dates and competitions
+
+The API board automatically loads football leagues and cups. The default kickoff filter is Today + tomorrow in Asia/Kuala_Lumpur (MYT, UTC+8). Select a specific MYT day, competition, or All available dates. Search by team to compare the exact fixture shown on 1CUF; compare teams, competition and kickoff, not team names alone. Liverpool–Chelsea on 29 October is a League Cup fixture, while Liverpool–Arsenal on 2 November is a different Premier League fixture.
+
+iSports uses a UTC calendar date for its daily schedule. The comparison screen provides an iSports schedule date selector, initially the current UTC date. For a 29 October 04:00 MYT kickoff, select 28 October UTC and refresh. Both sources remain snapshots; 1CUF rates are not automatically imported and coverage can differ. iSports requests retain a global 60-second cooldown and caches are bounded by date. Competition is checked when both providers supply it, in addition to ordered teams, exact kickoff and phase.

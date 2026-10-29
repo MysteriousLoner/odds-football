@@ -1,3 +1,4 @@
+import { kickoffOrder } from '@/lib/fixtures';
 import { parseFeed } from '@/lib/market';
 export const dynamic='force-dynamic';
 let cache: {at:number;data:unknown}|null=null;
@@ -20,7 +21,7 @@ export async function GET() {
         if(body.meta?.stale !== false || !body.liveMap) throw new Error('The odds feed is stale or unavailable. New bets are paused.');
         return parseFeed(body.liveMap,feed==='live');
       }));
-      const data={configured:true,matches:feeds.flat(),receivedAt:new Date().toISOString(),expiresAt:new Date(Date.now()+30000).toISOString()};
+      const data={configured:true,matches:feeds.flat().sort(kickoffOrder),receivedAt:new Date().toISOString(),expiresAt:new Date(Date.now()+30000).toISOString()};
       cache={at:Date.now(),data};return Response.json(data,{headers});
     } catch(error){ return Response.json({configured:true,error:error instanceof Error?error.message:'Unable to load odds. Try refreshing.'},{status:502,headers}); }
   })();

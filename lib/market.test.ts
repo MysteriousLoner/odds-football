@@ -15,11 +15,11 @@ test('invalid stakes and changed prices cannot mutate wallet',()=>{
  const m=DEMO_MATCHES[0],s=m.selections[0];for(const risk of [NaN,Infinity,-100,0,.01,100.001,10001])assert.throws(()=>placeTicket(freshAccount(),m,s,risk));
  assert.throws(()=>placeTicket({...freshAccount(),balance:20},m,s,100));assert.throws(()=>placeTicket(freshAccount(),m,{...s,odds:2},100));assert.equal(profitFor(100,1),0);
 });
-test('API parser isolates competition, market, supported outcomes and available lay side; preserves runner identity',()=>{
+test('API parser includes football leagues and cups, isolates market, supported outcomes and available lay side; preserves runner identity',()=>{
  const row={marketType:'CORRECT_SCORE',marketId:'1.2',runner:'1 - 0',runnerId:1,handicap:0,layOdds:12,laySize:100};
  const event={sport:'soccer',tournament:'Premier League',team1:'Arsenal',team2:'Chelsea',openTimestamp:new Date(Date.now()+86400000).toISOString(),markets:[row,{...row,runnerId:2,runner:'Any Other Home Win'},{...row,runnerId:3,layOdds:0},{...row,runnerId:4,marketType:'MATCH_ODDS'}]};
  const matches=parseFeed({good:event,other:{...event,tournament:'Scottish Premier League'},nullLeague:{...event,tournament:null}},false);
- assert.equal(matches.length,1);assert.equal(matches[0].selections.length,2);assert.equal(matches[0].selections[0].score,'1–0');assert.equal(matches[0].selections[0].marketId,'1.2');
+ assert.equal(matches.length,2);assert.equal(matches[1].competition,'Scottish Premier League');assert.equal(matches[0].selections.length,2);assert.equal(matches[0].selections[0].score,'1–0');assert.equal(matches[0].selections[0].marketId,'1.2');
  assert.equal(parseFeed({old:{...event,openTimestamp:'2020-01-01'}},false).length,0);
 });
 

@@ -23,3 +23,7 @@
 .score-grid{grid-template-columns:repeat(4,minmax(0,1fr));max-height:none;overflow:visible}.match-body{align-items:start}
 
 .ticket-fee{display:block;color:var(--muted);font-size:10px;margin-top:5px}.score-caption>span:last-child{max-width:50%}
+
+.fixture-filters{display:flex;flex-wrap:wrap;gap:12px;margin:16px 0}.fixture-filters label,.schedule-date{display:flex;flex-direction:column;gap:6px;color:var(--muted);font-size:11px;min-width:160px;max-width:100%}.fixture-filters select,.schedule-date input{background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:9px;color:var(--ink);max-width:100%}.fixture-filters label{flex:1}.fixture-filters select{width:100%}.schedule-date{margin:16px 0;max-width:420px}.schedule-date span{font-size:10px}.match-competition{font-size:10px;color:var(--orange);padding:7px 16px 0}.ticket-fee{overflow-wrap:anywhere}@media(max-width:620px){.fixture-filters{gap:9px}.fixture-filters label{min-width:130px}.fixture-filters select{font-size:10px}.match-competition{padding-left:14px}.market-title h2{overflow-wrap:anywhere;font-size:19px}}
+
+.fixture-more{margin:18px 0;color:var(--muted);font-size:11px}.fixture-more p{margin-bottom:9px}

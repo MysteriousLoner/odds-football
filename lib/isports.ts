@@ -1,6 +1,7 @@
-export type SportsFixture = { id:string; home:string; away:string; kickoff:string; live:boolean };
+import {competitionKey} from './fixtures.ts';
+export type SportsFixture = { id:string; home:string; away:string; kickoff:string; live:boolean; competition?:string };
 export type SportsQuote = { matchId:string; companyId:string; company:string; live:boolean; changedAt:string|null; scores:{score:string; netBackOdds:number}[] };
-export type SportsData = { configured:boolean; fixtures:SportsFixture[]; quotes:SportsQuote[]; receivedAt:string; expiresAt:string; error?:string; warnings?:string[] };
+export type SportsData = { configured:boolean; fixtures:SportsFixture[]; quotes:SportsQuote[]; receivedAt:string; expiresAt:string; error?:string; warnings?:string[]; scheduleDateUTC?:string };
 const aliases:Record<string,string>={
  'man utd':'manchester united','man united':'manchester united','man city':'manchester city',
  'tottenham':'tottenham hotspur','spurs':'tottenham hotspur','brighton':'brighton hove albion','brighton and hove albion':'brighton hove albion',
@@ -13,18 +14,18 @@ export function teamKey(name:string):string {
  const key=name.normalize('NFKD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[.&]/g,' ').replace(/\bfc\b/g,' ').replace(/\s+/g,' ').trim();
  return aliases[key]??key;
 }
-export function matchSportsFixture(match:{a:string;b:string;kickoff?:string;source:string;live:boolean},fixtures:SportsFixture[]):SportsFixture|null {
+export function matchSportsFixture(match:{a:string;b:string;kickoff?:string;source:string;live:boolean;competition?:string},fixtures:SportsFixture[]):SportsFixture|null {
  if(match.source!=='api'||!match.kickoff||!Number.isFinite(Date.parse(match.kickoff)))return null;
- const candidates=fixtures.filter(f=>teamKey(f.home)===teamKey(match.a)&&teamKey(f.away)===teamKey(match.b)&&Date.parse(f.kickoff)===Date.parse(match.kickoff!)&&f.live===match.live);
+ const candidates=fixtures.filter(f=>teamKey(f.home)===teamKey(match.a)&&teamKey(f.away)===teamKey(match.b)&&Date.parse(f.kickoff)===Date.parse(match.kickoff!)&&f.live===match.live&&(!match.competition||!f.competition||competitionKey(match.competition)===competitionKey(f.competition)));
  return candidates.length===1?candidates[0]:null;
 }
 export function parseSportsFixtures(raw:unknown,now=Date.now()):SportsFixture[]{
  if(!Array.isArray(raw))return [];
  return raw.flatMap(e=>{
-  if(!e||!['English Premier League','England Premier League'].includes(e.leagueName)||!['string','number'].includes(typeof e.matchId)||typeof e.homeName!=='string'||typeof e.awayName!=='string'||!Number.isFinite(e.matchTime)||![0,1,2,3,4,5].includes(e.status))return [];
+  if(!e||typeof e.leagueName!=='string'||!e.leagueName.trim()||!['string','number'].includes(typeof e.matchId)||typeof e.homeName!=='string'||typeof e.awayName!=='string'||!Number.isFinite(e.matchTime)||![0,1,2,3,4,5].includes(e.status))return [];
   const time=e.matchTime*1000;
   if(time<now-86400000||time>now+14*86400000)return [];
-  return [{id:String(e.matchId),home:e.homeName,away:e.awayName,kickoff:new Date(time).toISOString(),live:e.status!==0}];
+  return [{id:String(e.matchId),home:e.homeName,away:e.awayName,kickoff:new Date(time).toISOString(),live:e.status!==0,competition:e.leagueName.trim()}];
  });
 }
 export function parseSportsQuotes(raw:unknown,live:boolean):SportsQuote[]{

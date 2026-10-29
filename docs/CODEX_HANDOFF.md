@@ -2,7 +2,7 @@
 
 ## Start here
 
-This is a play-credit Premier League reverse correct-score (反波胆) demo. There are no payments, exchange orders, prizes or production accounts. The app reserves maximum liability and computes gross profit as `risk / (decimal lay odds - 1)`, rounded down to two decimals. New tickets deduct a 5% platform fee from winning profit; losing bets and returned risk incur no fee. Stored ticket profit is net, with gross profit and fee recorded separately. Existing tickets retain their original payouts. Rates display `95 / (layOdds - 1)` percent. No 50% payout multiplier was applied.
+This is a play-credit football league/cup reverse correct-score (反波胆) demo. There are no payments, exchange orders, prizes or production accounts. The app reserves maximum liability and computes gross profit as `risk / (decimal lay odds - 1)`, rounded down to two decimals. New tickets deduct a 5% platform fee from winning profit; losing bets and returned risk incur no fee. Stored ticket profit is net, with gross profit and fee recorded separately. Existing tickets retain their original payouts. Rates display `95 / (layOdds - 1)` percent. No 50% payout multiplier was applied.
 
 Open this repository as a project in Codex. Read `AGENTS.md` and `README.md` first. Use the Docker/standard Next.js workflow below for a local checkout; `npm run dev` is the original Sites/Vinext workflow.
 
@@ -27,7 +27,7 @@ cp .env.example .env
 docker compose up --build -d
 ```
 
-Open http://localhost:3000 and http://localhost:3000/api/health. In PowerShell, use `Copy-Item .env.example .env` instead of `cp` if preferred. Docker publishes to localhost only. No API key is required for simulated mode. To request API prices in the app, select **Connect live odds → Check connection & load odds**. It filters English Premier League fixtures; there may be no eligible current fixtures. Refresh is manual, cached for 30 seconds, and uses up to two provider calls. Settlement remains simulated.
+Open http://localhost:3000 and http://localhost:3000/api/health. In PowerShell, use `Copy-Item .env.example .env` instead of `cp` if preferred. Docker publishes to localhost only. No API key is required for simulated mode. To request API prices in the app, select **Connect live odds → Check connection & load odds**. It includes football leagues and cups; there may be no eligible current fixtures. Refresh is manual, cached for 30 seconds, and uses up to two provider calls. Settlement remains simulated.
 
 ```sh
 docker compose ps

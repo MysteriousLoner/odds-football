@@ -1,5 +1,5 @@
 export type Selection = { score: string; odds: number; size: number; marketId: string; runnerId: number; handicap: number };
-export type Match = { id: string; a: string; b: string; time: string; live: boolean; minute?: number; current?: string; formA?: string; formB?: string; selections: Selection[]; source: 'demo' | 'api'; kickoff?: string };
+export type Match = { id: string; a: string; b: string; time: string; live: boolean; minute?: number; current?: string; formA?: string; formB?: string; selections: Selection[]; source: 'demo' | 'api'; kickoff?: string; competition?: string };
 export type Ticket = { id: string; eventId: string; a: string; b: string; score: string; odds: number; risk: number; profit: number; grossProfit?: number; platformFee?: number; feeRate?: number; created: string; source: 'demo' | 'api'; status: 'open' | 'won' | 'lost'; final?: string; marketId: string; runnerId: number; handicap: number };
 export type Account = { balance: number; tickets: Ticket[]; results: Record<string,string>; topups: number };
 export const freshAccount = (): Account => ({ balance: 10000, tickets: [], results: {}, topups: 0 });
@@ -60,7 +60,7 @@ export function parseFeed(map: Record<string,unknown>, live: boolean): Match[] {
   return Object.entries(map).flatMap(([id, raw]) => {
     if (!raw || typeof raw !== 'object') return [];
     const e=raw as Record<string,unknown>;
-    if(e.sport !== 'soccer' || typeof e.tournament !== 'string' || !/^(?:english\s+)?premier league$/i.test(e.tournament.trim()) || typeof e.team1 !== 'string' || typeof e.team2 !== 'string' || !Array.isArray(e.markets)) return [];
+    if(e.sport !== 'soccer' || typeof e.tournament !== 'string' || !e.tournament.trim() || typeof e.team1 !== 'string' || typeof e.team2 !== 'string' || !Array.isArray(e.markets)) return [];
     const groups = new Map<string,Selection[]>();
     for(const row of e.markets) {
       if(!row || row.marketType !== 'CORRECT_SCORE' || typeof row.runner !== 'string' || !normalizeOutcome(row.runner) || !Number.isFinite(row.layOdds) || row.layOdds <= 1 || !Number.isFinite(row.laySize) || row.laySize <= 0 || typeof row.marketId !== 'string' || !Number.isFinite(row.runnerId) || !Number.isFinite(row.handicap)) continue;
@@ -73,7 +73,7 @@ export function parseFeed(map: Record<string,unknown>, live: boolean): Match[] {
     // Drop historic prematch fixtures; the upstream board can retain them.
     if(!live && timestamp && timestamp.getTime() < Date.now()-15*60*1000) return [];
     const time=timestamp && Number.isFinite(timestamp.getTime()) ? new Intl.DateTimeFormat('en-GB',{day:'numeric',month:'short',hour:'2-digit',minute:'2-digit',timeZone:'Asia/Kuala_Lumpur'}).format(timestamp) : 'Time TBC';
-    return [{id:`api-${live?'live':'prematch'}-${id}`,a:e.team1,b:e.team2,time,live,selections,kickoff:timestamp && Number.isFinite(timestamp.getTime()) ? timestamp.toISOString() : undefined,source:'api' as const}];
+    return [{id:`api-${live?'live':'prematch'}-${id}`,a:e.team1,b:e.team2,time,live,selections,competition:e.tournament.trim(),kickoff:timestamp && Number.isFinite(timestamp.getTime()) ? timestamp.toISOString() : undefined,source:'api' as const}];
   });
 }
 export function placeTicket(account:Account, match:Match, selection:Selection, risk:number): Account {

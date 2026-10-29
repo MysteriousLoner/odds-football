@@ -15,7 +15,7 @@
     "dev:docker": "next dev --hostname 0.0.0.0",
     "build:docker": "next build",
     "start:docker": "node .next/standalone/server.js",
-    "test": "node --experimental-strip-types --test lib/market.test.ts lib/isports.test.ts",
+    "test": "node --experimental-strip-types --test lib/market.test.ts lib/isports.test.ts lib/fixtures.test.ts",
     "typecheck": "tsc --noEmit",
     "reports": "node scripts/serve-reports.mjs"
   },
